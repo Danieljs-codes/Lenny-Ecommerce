@@ -18,10 +18,10 @@ import './style.css';
 //   }
 // });
 
-const showForm = document.getElementById('show-form');
-const form = document.getElementById('form');
+// const showForm = document.getElementById('show-form');
+// const form = document.getElementById('form');
 
-showForm.addEventListener('click', function () {
-  form.classList.toggle('hidden')
-  form.classList.toggle('flex')
-});
+// showForm.addEventListener('click', function () {
+//   form.classList.toggle('hidden')
+//   form.classList.toggle('flex')
+// });

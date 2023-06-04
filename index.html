@@ -11,14 +11,15 @@
     <title>Lenny - Ecommerce</title>
   </head>
   <body class="font-grotesk relative">
-    <button id="show-form" class="px-4 py-6 bg-green text-white text-base font-normal">
+    <!-- <button id="show-form" class="px-4 py-6 bg-green text-white text-base font-normal">
       Open Form
-    </button>
+    </button> -->
     <main class="bg-white">
       <!--Signing Up and Signing In Form-->
       <!--Add the class flex or display flex when needed and remove hidden -->
-      <div id="form"
-        class="min-h-screen bg-[#0B0F0E]/50 px-6 py-6 items-center justify-center flex absolute top-0 left-0 right-0 bottom-0 z-10"
+      <div
+        id="form"
+        class="min-h-screen bg-[#0B0F0E]/50 px-6 py-6 items-center justify-center hidden fixed top-0 left-0 right-0 bottom-0 z-10"
       >
         <div class="bg-white px-6 py-8 flex-1 rounded-lg max-w-[27.5rem]">
           <h2 class="font-semibold text-xl mb-6">Sign Up</h2>
@@ -108,6 +109,129 @@
 
             Sign Up with Facebook
           </button>
+        </div>
+      </div>
+      <!--End of Signing Up and Signing In Form-->
+      <!--Header-->
+      <nav class="flex items-center px-6 py-4 bg-white border border-grey-02">
+        <!--Logo-->
+        <div class="hidden md:block mr-9">
+          <img src="./images/Logo.svg" alt="" />
+        </div>
+        <!--Search-->
+        <div class="flex flex-1">
+          <div
+            class="w-full rounded-xl border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-[#818B9C] focus:ring-2 focus:ring-inset focus:ring-green placeholder:text-sm sm:text-sm sm:leading-6 placeholder:font-normal bg-[#F6F8FA] flex h-11"
+          >
+            <select
+              id="drop-down"
+              name="drop-down"
+              autocomplete="off"
+              class="h-full rounded-md border-0 bg-transparent py-0 pl-3 pr-7 text-black-tint focus:outline-none focus:ring-2 focus:ring-inset text-xs font-medium focus:ring-indigo-600 sm:text-sm"
+            >
+              <option>US</option>
+              <option>CA</option>
+              <option>EU</option>
+            </select>
+            <span
+              class="w-[1px] inline-block h-full bg-grey-02 ml-5 mr-4"
+            ></span>
+            <div class="flex items-center flex-1">
+              <div class="flex-1">
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  placeholder="Search on lenny..."
+                  class="w-full bg-transparent outline-0 outline-transparent border-0 border-transparent focus:ring-0 focus:border-transparent placeholder:text-xs placeholder:text-grey-01 text-sm font-medium text-grey-01 py-3"
+                />
+              </div>
+              <div>
+                <svg
+                  class="inline-block"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                    stroke="#C4C8CC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22 22L20 20"
+                    stroke="#C4C8CC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Search End -->
+        <!--Icons-->
+        <div class="icons ml-12 flex gap-x-4">
+          <button>
+            <img src="./images/shopping-cart.svg" alt="Shopping Cart Icon" />
+          </button>
+          <button class="relative isolate">
+            <img src="./images/notification.svg" alt="" />
+            <span
+              class="rounded-full bg-red-500 absolute text-white text-[9px] font-medium px-[.3125rem] py-0.5 -right-2 top-1 border border-white"
+              >6</span
+            >
+          </button>
+          <button class="relative isolate">
+            <img src="./images/sms.svg" alt="" />
+            <span
+              class="rounded-full bg-red-500 absolute text-white text-[9px] font-medium px-[.3125rem] py-0.5 -right-2 top-1 border border-white"
+              >6</span
+            >
+          </button>
+          <span class="bg-grey-02 w-[1px] inline-block"></span>
+          <button class="md:hidden">
+            <img src="./images/menu.svg" alt="" />
+          </button>
+          <button class="hidden md:block">
+            <div class="w-12 h-12">
+              <img
+                class="bg-cover bg-no-repeat bg-center"
+                src="./images/defaultPfp.svg"
+                alt="Profile Picture"
+              />
+            </div>
+          </button>
+        </div>
+        <!--End of Icons-->
+        <div class="account"></div>
+      </nav>
+      <div class="bg-grey-03 px-6">
+        <div class="grid grid-cols-2 grid-rows-1 place-items-center">
+          <div>
+            <h1
+              class="text-[3.525rem] text-black-tint font-semibold -tracking-[0.2] leading-[120%] mb-4"
+            >
+              Upgrade Your Wardrobe With Our Collection
+            </h1>
+            <p class="text-grey-01 mb-8 max-w-[36.5625rem] text-lg">
+              Eget neque aenean viverra aliquam tortor diam nunc. Dis
+              pellentesque lectus quis velit fusce aenean nunc dui consectetur.
+              Eu lorem est ullamcorper nisl amet non mollis.
+            </p>
+            <div class="space-x-4 font-semibold">
+              <a class="py-3 px-6 inline-block bg-green text-white rounded-lg" href="">Buy Now</a>
+              <a class="py-3 px-6 inline-block border border-green text-green rounded-lg" href="">View Detail</a>
+            </div>
+          </div>
+          <div>
+            <img class="w-full" src="./images/hero-image.png" alt="Hero image">
+          </div>
         </div>
       </div>
     </main>
