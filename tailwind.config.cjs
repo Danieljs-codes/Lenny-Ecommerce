@@ -11,7 +11,10 @@ module.exports = {
         'black-tint': '#0b0f0e',
         'grey-01': '#818B9C',
         'grey-02': '#E4E9EE',
-        'grey-03': '#F7F7F7'
+        'grey-03': '#F7F7F7',
+        'grey-04': '#F6F6F6',
+        'green-02': '#1D9E34',
+        'danger': '#E04124'
       },
     },
   },
