@@ -45,3 +45,6 @@ openSidebar.addEventListener('click', function () {
   overlay.classList.toggle('hidden');
   overlay.classList.toggle('flex');
 });
+
+const date = new Date().toISOString()
+console.log(date);

@@ -791,13 +791,17 @@
         </div>
       </section>
       <section>
-        <div class="grid [grid-template-columns:_220px_1fr_1fr_1fr_1fr] gap-x-6 px-6">
-          <aside class="">
+        <div
+          class="grid md:[grid-template-columns:_220px_1fr_1fr_1fr_1fr] gap-x-6 px-6 grid-cols-1"
+        >
+          <aside class="hidden md:block">
             <h2 class="sr-only">Filters</h2>
 
             <!-- Mobile filter dialog toggle, controls the 'mobileFilterDialogOpen' state. -->
 
-            <div class="hidden px-4 py-4 border rounded-xl border-grey-02uil lg:block">
+            <div
+              class="hidden px-4 py-4 border rounded-xl border-grey-02 lg:block"
+            >
               <form class="space-y-10 divide-y divide-gray-200">
                 <div>
                   <fieldset>
@@ -1043,15 +1047,697 @@
               </form>
             </div>
           </aside>
-          <div class="col-span-4 bg-black flex flex-1">
-            <div class="bg-black"></div>
-            <div class="bg-black"></div>
-            <div class="bg-black"></div>
-            <div class="bg-black"></div>
+          <div
+            class="ola md:col-span-4 gap-y-6 grid place-items-center grid-cols-2 md:grid-cols-3 md:grid-rows-4 grid-rows-6 gap-x-4 overflow-hidden relative"
+          >
+            <!-- Product Search Card -->
+            <div class="rounded-lg overflow-hidden">
+              <div class="bg-grey-04 rounded-lg px-5 py-3">
+                <img src="./images/mouse.png" alt="Mouse product image" />
+              </div>
+              <div class="flex items-start pt-5">
+                <h2
+                  class="font-semibold flex-1 tracking-[-0.2px] leading-[1.2] mb-1 text-black-tint line-clamp-2"
+                >
+                  G502 X Lightspeed Wireless Gaming Mouse
+                </h2>
+                <p class="font-semibold text-green-02">$139</p>
+              </div>
+              <div>
+                <p class="text-sm text-grey-01 mb-2">North Purwokerto</p>
+                <div class="flex items-center">
+                  <span class="flex items-center justify-center">
+                    <svg
+                      class="inline-block mr-2"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.4416 2.92507L12.9083 5.85841C13.1083 6.26674 13.6416 6.65841 14.0916 6.73341L16.7499 7.17507C18.4499 7.45841 18.8499 8.69174 17.6249 9.90841L15.5583 11.9751C15.2083 12.3251 15.0166 13.0001 15.1249 13.4834L15.7166 16.0417C16.1833 18.0667 15.1083 18.8501 13.3166 17.7917L10.8249 16.3167C10.3749 16.0501 9.63326 16.0501 9.17492 16.3167L6.68326 17.7917C4.89992 18.8501 3.81659 18.0584 4.28326 16.0417L4.87492 13.4834C4.98326 13.0001 4.79159 12.3251 4.44159 11.9751L2.37492 9.90841C1.15826 8.69174 1.54992 7.45841 3.24992 7.17507L5.90826 6.73341C6.34992 6.65841 6.88326 6.26674 7.08326 5.85841L8.54992 2.92507C9.34992 1.33341 10.6499 1.33341 11.4416 2.92507Z"
+                        fill="#FFA439"
+                      />
+                    </svg>
+                    <span class="text-black-tint text-xs inline-block mr-2"
+                      >4.8</span
+                    >
+                  </span>
+                  <span class="inline-block mr-2">
+                    <svg
+                      class="align-middle inline-block"
+                      width="4"
+                      height="4"
+                      viewBox="0 0 4 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="2" cy="2" r="2" fill="#E4E9EE" />
+                    </svg>
+                  </span>
+                  <span class="inline-block font-normal text-black-tint"
+                    >1,238 Sold</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg overflow-hidden">
+              <div class="bg-grey-04 rounded-lg px-5 py-3">
+                <img src="./images/mouse.png" alt="Mouse product image" />
+              </div>
+              <div class="flex items-start pt-5">
+                <h2
+                  class="font-semibold flex-1 tracking-[-0.2px] leading-[1.2] mb-1 text-black-tint line-clamp-2"
+                >
+                  G502 X Lightspeed Wireless Gaming Mouse
+                </h2>
+                <p class="font-semibold text-green-02">$139</p>
+              </div>
+              <div>
+                <p class="text-sm text-grey-01 mb-2">North Purwokerto</p>
+                <div class="flex items-center">
+                  <span class="flex items-center justify-center">
+                    <svg
+                      class="inline-block mr-2"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.4416 2.92507L12.9083 5.85841C13.1083 6.26674 13.6416 6.65841 14.0916 6.73341L16.7499 7.17507C18.4499 7.45841 18.8499 8.69174 17.6249 9.90841L15.5583 11.9751C15.2083 12.3251 15.0166 13.0001 15.1249 13.4834L15.7166 16.0417C16.1833 18.0667 15.1083 18.8501 13.3166 17.7917L10.8249 16.3167C10.3749 16.0501 9.63326 16.0501 9.17492 16.3167L6.68326 17.7917C4.89992 18.8501 3.81659 18.0584 4.28326 16.0417L4.87492 13.4834C4.98326 13.0001 4.79159 12.3251 4.44159 11.9751L2.37492 9.90841C1.15826 8.69174 1.54992 7.45841 3.24992 7.17507L5.90826 6.73341C6.34992 6.65841 6.88326 6.26674 7.08326 5.85841L8.54992 2.92507C9.34992 1.33341 10.6499 1.33341 11.4416 2.92507Z"
+                        fill="#FFA439"
+                      />
+                    </svg>
+                    <span class="text-black-tint text-xs inline-block mr-2"
+                      >4.8</span
+                    >
+                  </span>
+                  <span class="inline-block mr-2">
+                    <svg
+                      class="align-middle inline-block"
+                      width="4"
+                      height="4"
+                      viewBox="0 0 4 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="2" cy="2" r="2" fill="#E4E9EE" />
+                    </svg>
+                  </span>
+                  <span class="inline-block font-normal text-black-tint"
+                    >1,238 Sold</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg overflow-hidden">
+              <div class="bg-grey-04 rounded-lg px-5 py-3">
+                <img src="./images/mouse.png" alt="Mouse product image" />
+              </div>
+              <div class="flex items-start pt-5">
+                <h2
+                  class="font-semibold flex-1 tracking-[-0.2px] leading-[1.2] mb-1 text-black-tint line-clamp-2"
+                >
+                  G502 X Lightspeed Wireless Gaming Mouse
+                </h2>
+                <p class="font-semibold text-green-02">$139</p>
+              </div>
+              <div>
+                <p class="text-sm text-grey-01 mb-2">North Purwokerto</p>
+                <div class="flex items-center">
+                  <span class="flex items-center justify-center">
+                    <svg
+                      class="inline-block mr-2"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.4416 2.92507L12.9083 5.85841C13.1083 6.26674 13.6416 6.65841 14.0916 6.73341L16.7499 7.17507C18.4499 7.45841 18.8499 8.69174 17.6249 9.90841L15.5583 11.9751C15.2083 12.3251 15.0166 13.0001 15.1249 13.4834L15.7166 16.0417C16.1833 18.0667 15.1083 18.8501 13.3166 17.7917L10.8249 16.3167C10.3749 16.0501 9.63326 16.0501 9.17492 16.3167L6.68326 17.7917C4.89992 18.8501 3.81659 18.0584 4.28326 16.0417L4.87492 13.4834C4.98326 13.0001 4.79159 12.3251 4.44159 11.9751L2.37492 9.90841C1.15826 8.69174 1.54992 7.45841 3.24992 7.17507L5.90826 6.73341C6.34992 6.65841 6.88326 6.26674 7.08326 5.85841L8.54992 2.92507C9.34992 1.33341 10.6499 1.33341 11.4416 2.92507Z"
+                        fill="#FFA439"
+                      />
+                    </svg>
+                    <span class="text-black-tint text-xs inline-block mr-2"
+                      >4.8</span
+                    >
+                  </span>
+                  <span class="inline-block mr-2">
+                    <svg
+                      class="align-middle inline-block"
+                      width="4"
+                      height="4"
+                      viewBox="0 0 4 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="2" cy="2" r="2" fill="#E4E9EE" />
+                    </svg>
+                  </span>
+                  <span class="inline-block font-normal text-black-tint"
+                    >1,238 Sold</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg overflow-hidden">
+              <div class="bg-grey-04 rounded-lg px-5 py-3">
+                <img src="./images/mouse.png" alt="Mouse product image" />
+              </div>
+              <div class="flex items-start pt-5">
+                <h2
+                  class="font-semibold flex-1 tracking-[-0.2px] leading-[1.2] mb-1 text-black-tint line-clamp-2"
+                >
+                  G502 X Lightspeed Wireless Gaming Mouse
+                </h2>
+                <p class="font-semibold text-green-02">$139</p>
+              </div>
+              <div>
+                <p class="text-sm text-grey-01 mb-2">North Purwokerto</p>
+                <div class="flex items-center">
+                  <span class="flex items-center justify-center">
+                    <svg
+                      class="inline-block mr-2"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.4416 2.92507L12.9083 5.85841C13.1083 6.26674 13.6416 6.65841 14.0916 6.73341L16.7499 7.17507C18.4499 7.45841 18.8499 8.69174 17.6249 9.90841L15.5583 11.9751C15.2083 12.3251 15.0166 13.0001 15.1249 13.4834L15.7166 16.0417C16.1833 18.0667 15.1083 18.8501 13.3166 17.7917L10.8249 16.3167C10.3749 16.0501 9.63326 16.0501 9.17492 16.3167L6.68326 17.7917C4.89992 18.8501 3.81659 18.0584 4.28326 16.0417L4.87492 13.4834C4.98326 13.0001 4.79159 12.3251 4.44159 11.9751L2.37492 9.90841C1.15826 8.69174 1.54992 7.45841 3.24992 7.17507L5.90826 6.73341C6.34992 6.65841 6.88326 6.26674 7.08326 5.85841L8.54992 2.92507C9.34992 1.33341 10.6499 1.33341 11.4416 2.92507Z"
+                        fill="#FFA439"
+                      />
+                    </svg>
+                    <span class="text-black-tint text-xs inline-block mr-2"
+                      >4.8</span
+                    >
+                  </span>
+                  <span class="inline-block mr-2">
+                    <svg
+                      class="align-middle inline-block"
+                      width="4"
+                      height="4"
+                      viewBox="0 0 4 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="2" cy="2" r="2" fill="#E4E9EE" />
+                    </svg>
+                  </span>
+                  <span class="inline-block font-normal text-black-tint"
+                    >1,238 Sold</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg overflow-hidden">
+              <div class="bg-grey-04 rounded-lg px-5 py-3">
+                <img src="./images/mouse.png" alt="Mouse product image" />
+              </div>
+              <div class="flex items-start pt-5">
+                <h2
+                  class="font-semibold flex-1 tracking-[-0.2px] leading-[1.2] mb-1 text-black-tint line-clamp-2"
+                >
+                  G502 X Lightspeed Wireless Gaming Mouse
+                </h2>
+                <p class="font-semibold text-green-02">$139</p>
+              </div>
+              <div>
+                <p class="text-sm text-grey-01 mb-2">North Purwokerto</p>
+                <div class="flex items-center">
+                  <span class="flex items-center justify-center">
+                    <svg
+                      class="inline-block mr-2"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.4416 2.92507L12.9083 5.85841C13.1083 6.26674 13.6416 6.65841 14.0916 6.73341L16.7499 7.17507C18.4499 7.45841 18.8499 8.69174 17.6249 9.90841L15.5583 11.9751C15.2083 12.3251 15.0166 13.0001 15.1249 13.4834L15.7166 16.0417C16.1833 18.0667 15.1083 18.8501 13.3166 17.7917L10.8249 16.3167C10.3749 16.0501 9.63326 16.0501 9.17492 16.3167L6.68326 17.7917C4.89992 18.8501 3.81659 18.0584 4.28326 16.0417L4.87492 13.4834C4.98326 13.0001 4.79159 12.3251 4.44159 11.9751L2.37492 9.90841C1.15826 8.69174 1.54992 7.45841 3.24992 7.17507L5.90826 6.73341C6.34992 6.65841 6.88326 6.26674 7.08326 5.85841L8.54992 2.92507C9.34992 1.33341 10.6499 1.33341 11.4416 2.92507Z"
+                        fill="#FFA439"
+                      />
+                    </svg>
+                    <span class="text-black-tint text-xs inline-block mr-2"
+                      >4.8</span
+                    >
+                  </span>
+                  <span class="inline-block mr-2">
+                    <svg
+                      class="align-middle inline-block"
+                      width="4"
+                      height="4"
+                      viewBox="0 0 4 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="2" cy="2" r="2" fill="#E4E9EE" />
+                    </svg>
+                  </span>
+                  <span class="inline-block font-normal text-black-tint"
+                    >1,238 Sold</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg overflow-hidden">
+              <div class="bg-grey-04 rounded-lg px-5 py-3">
+                <img src="./images/mouse.png" alt="Mouse product image" />
+              </div>
+              <div class="flex items-start pt-5">
+                <h2
+                  class="font-semibold flex-1 tracking-[-0.2px] leading-[1.2] mb-1 text-black-tint line-clamp-2"
+                >
+                  G502 X Lightspeed Wireless Gaming Mouse
+                </h2>
+                <p class="font-semibold text-green-02">$139</p>
+              </div>
+              <div>
+                <p class="text-sm text-grey-01 mb-2">North Purwokerto</p>
+                <div class="flex items-center">
+                  <span class="flex items-center justify-center">
+                    <svg
+                      class="inline-block mr-2"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.4416 2.92507L12.9083 5.85841C13.1083 6.26674 13.6416 6.65841 14.0916 6.73341L16.7499 7.17507C18.4499 7.45841 18.8499 8.69174 17.6249 9.90841L15.5583 11.9751C15.2083 12.3251 15.0166 13.0001 15.1249 13.4834L15.7166 16.0417C16.1833 18.0667 15.1083 18.8501 13.3166 17.7917L10.8249 16.3167C10.3749 16.0501 9.63326 16.0501 9.17492 16.3167L6.68326 17.7917C4.89992 18.8501 3.81659 18.0584 4.28326 16.0417L4.87492 13.4834C4.98326 13.0001 4.79159 12.3251 4.44159 11.9751L2.37492 9.90841C1.15826 8.69174 1.54992 7.45841 3.24992 7.17507L5.90826 6.73341C6.34992 6.65841 6.88326 6.26674 7.08326 5.85841L8.54992 2.92507C9.34992 1.33341 10.6499 1.33341 11.4416 2.92507Z"
+                        fill="#FFA439"
+                      />
+                    </svg>
+                    <span class="text-black-tint text-xs inline-block mr-2"
+                      >4.8</span
+                    >
+                  </span>
+                  <span class="inline-block mr-2">
+                    <svg
+                      class="align-middle inline-block"
+                      width="4"
+                      height="4"
+                      viewBox="0 0 4 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="2" cy="2" r="2" fill="#E4E9EE" />
+                    </svg>
+                  </span>
+                  <span class="inline-block font-normal text-black-tint"
+                    >1,238 Sold</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg overflow-hidden">
+              <div class="bg-grey-04 rounded-lg px-5 py-3">
+                <img src="./images/mouse.png" alt="Mouse product image" />
+              </div>
+              <div class="flex items-start pt-5">
+                <h2
+                  class="font-semibold flex-1 tracking-[-0.2px] leading-[1.2] mb-1 text-black-tint line-clamp-2"
+                >
+                  G502 X Lightspeed Wireless Gaming Mouse
+                </h2>
+                <p class="font-semibold text-green-02">$139</p>
+              </div>
+              <div>
+                <p class="text-sm text-grey-01 mb-2">North Purwokerto</p>
+                <div class="flex items-center">
+                  <span class="flex items-center justify-center">
+                    <svg
+                      class="inline-block mr-2"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.4416 2.92507L12.9083 5.85841C13.1083 6.26674 13.6416 6.65841 14.0916 6.73341L16.7499 7.17507C18.4499 7.45841 18.8499 8.69174 17.6249 9.90841L15.5583 11.9751C15.2083 12.3251 15.0166 13.0001 15.1249 13.4834L15.7166 16.0417C16.1833 18.0667 15.1083 18.8501 13.3166 17.7917L10.8249 16.3167C10.3749 16.0501 9.63326 16.0501 9.17492 16.3167L6.68326 17.7917C4.89992 18.8501 3.81659 18.0584 4.28326 16.0417L4.87492 13.4834C4.98326 13.0001 4.79159 12.3251 4.44159 11.9751L2.37492 9.90841C1.15826 8.69174 1.54992 7.45841 3.24992 7.17507L5.90826 6.73341C6.34992 6.65841 6.88326 6.26674 7.08326 5.85841L8.54992 2.92507C9.34992 1.33341 10.6499 1.33341 11.4416 2.92507Z"
+                        fill="#FFA439"
+                      />
+                    </svg>
+                    <span class="text-black-tint text-xs inline-block mr-2"
+                      >4.8</span
+                    >
+                  </span>
+                  <span class="inline-block mr-2">
+                    <svg
+                      class="align-middle inline-block"
+                      width="4"
+                      height="4"
+                      viewBox="0 0 4 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="2" cy="2" r="2" fill="#E4E9EE" />
+                    </svg>
+                  </span>
+                  <span class="inline-block font-normal text-black-tint"
+                    >1,238 Sold</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg overflow-hidden">
+              <div class="bg-grey-04 rounded-lg px-5 py-3">
+                <img src="./images/mouse.png" alt="Mouse product image" />
+              </div>
+              <div class="flex items-start pt-5">
+                <h2
+                  class="font-semibold flex-1 tracking-[-0.2px] leading-[1.2] mb-1 text-black-tint line-clamp-2"
+                >
+                  G502 X Lightspeed Wireless Gaming Mouse
+                </h2>
+                <p class="font-semibold text-green-02">$139</p>
+              </div>
+              <div>
+                <p class="text-sm text-grey-01 mb-2">North Purwokerto</p>
+                <div class="flex items-center">
+                  <span class="flex items-center justify-center">
+                    <svg
+                      class="inline-block mr-2"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.4416 2.92507L12.9083 5.85841C13.1083 6.26674 13.6416 6.65841 14.0916 6.73341L16.7499 7.17507C18.4499 7.45841 18.8499 8.69174 17.6249 9.90841L15.5583 11.9751C15.2083 12.3251 15.0166 13.0001 15.1249 13.4834L15.7166 16.0417C16.1833 18.0667 15.1083 18.8501 13.3166 17.7917L10.8249 16.3167C10.3749 16.0501 9.63326 16.0501 9.17492 16.3167L6.68326 17.7917C4.89992 18.8501 3.81659 18.0584 4.28326 16.0417L4.87492 13.4834C4.98326 13.0001 4.79159 12.3251 4.44159 11.9751L2.37492 9.90841C1.15826 8.69174 1.54992 7.45841 3.24992 7.17507L5.90826 6.73341C6.34992 6.65841 6.88326 6.26674 7.08326 5.85841L8.54992 2.92507C9.34992 1.33341 10.6499 1.33341 11.4416 2.92507Z"
+                        fill="#FFA439"
+                      />
+                    </svg>
+                    <span class="text-black-tint text-xs inline-block mr-2"
+                      >4.8</span
+                    >
+                  </span>
+                  <span class="inline-block mr-2">
+                    <svg
+                      class="align-middle inline-block"
+                      width="4"
+                      height="4"
+                      viewBox="0 0 4 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="2" cy="2" r="2" fill="#E4E9EE" />
+                    </svg>
+                  </span>
+                  <span class="inline-block font-normal text-black-tint"
+                    >1,238 Sold</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg overflow-hidden">
+              <div class="bg-grey-04 rounded-lg px-5 py-3">
+                <img src="./images/mouse.png" alt="Mouse product image" />
+              </div>
+              <div class="flex items-start pt-5">
+                <h2
+                  class="font-semibold flex-1 tracking-[-0.2px] leading-[1.2] mb-1 text-black-tint line-clamp-2"
+                >
+                  G502 X Lightspeed Wireless Gaming Mouse
+                </h2>
+                <p class="font-semibold text-green-02">$139</p>
+              </div>
+              <div>
+                <p class="text-sm text-grey-01 mb-2">North Purwokerto</p>
+                <div class="flex items-center">
+                  <span class="flex items-center justify-center">
+                    <svg
+                      class="inline-block mr-2"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.4416 2.92507L12.9083 5.85841C13.1083 6.26674 13.6416 6.65841 14.0916 6.73341L16.7499 7.17507C18.4499 7.45841 18.8499 8.69174 17.6249 9.90841L15.5583 11.9751C15.2083 12.3251 15.0166 13.0001 15.1249 13.4834L15.7166 16.0417C16.1833 18.0667 15.1083 18.8501 13.3166 17.7917L10.8249 16.3167C10.3749 16.0501 9.63326 16.0501 9.17492 16.3167L6.68326 17.7917C4.89992 18.8501 3.81659 18.0584 4.28326 16.0417L4.87492 13.4834C4.98326 13.0001 4.79159 12.3251 4.44159 11.9751L2.37492 9.90841C1.15826 8.69174 1.54992 7.45841 3.24992 7.17507L5.90826 6.73341C6.34992 6.65841 6.88326 6.26674 7.08326 5.85841L8.54992 2.92507C9.34992 1.33341 10.6499 1.33341 11.4416 2.92507Z"
+                        fill="#FFA439"
+                      />
+                    </svg>
+                    <span class="text-black-tint text-xs inline-block mr-2"
+                      >4.8</span
+                    >
+                  </span>
+                  <span class="inline-block mr-2">
+                    <svg
+                      class="align-middle inline-block"
+                      width="4"
+                      height="4"
+                      viewBox="0 0 4 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="2" cy="2" r="2" fill="#E4E9EE" />
+                    </svg>
+                  </span>
+                  <span class="inline-block font-normal text-black-tint"
+                    >1,238 Sold</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg overflow-hidden">
+              <div class="bg-grey-04 rounded-lg px-5 py-3">
+                <img src="./images/mouse.png" alt="Mouse product image" />
+              </div>
+              <div class="flex items-start pt-5">
+                <h2
+                  class="font-semibold flex-1 tracking-[-0.2px] leading-[1.2] mb-1 text-black-tint line-clamp-2"
+                >
+                  G502 X Lightspeed Wireless Gaming Mouse
+                </h2>
+                <p class="font-semibold text-green-02">$139</p>
+              </div>
+              <div>
+                <p class="text-sm text-grey-01 mb-2">North Purwokerto</p>
+                <div class="flex items-center">
+                  <span class="flex items-center justify-center">
+                    <svg
+                      class="inline-block mr-2"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.4416 2.92507L12.9083 5.85841C13.1083 6.26674 13.6416 6.65841 14.0916 6.73341L16.7499 7.17507C18.4499 7.45841 18.8499 8.69174 17.6249 9.90841L15.5583 11.9751C15.2083 12.3251 15.0166 13.0001 15.1249 13.4834L15.7166 16.0417C16.1833 18.0667 15.1083 18.8501 13.3166 17.7917L10.8249 16.3167C10.3749 16.0501 9.63326 16.0501 9.17492 16.3167L6.68326 17.7917C4.89992 18.8501 3.81659 18.0584 4.28326 16.0417L4.87492 13.4834C4.98326 13.0001 4.79159 12.3251 4.44159 11.9751L2.37492 9.90841C1.15826 8.69174 1.54992 7.45841 3.24992 7.17507L5.90826 6.73341C6.34992 6.65841 6.88326 6.26674 7.08326 5.85841L8.54992 2.92507C9.34992 1.33341 10.6499 1.33341 11.4416 2.92507Z"
+                        fill="#FFA439"
+                      />
+                    </svg>
+                    <span class="text-black-tint text-xs inline-block mr-2"
+                      >4.8</span
+                    >
+                  </span>
+                  <span class="inline-block mr-2">
+                    <svg
+                      class="align-middle inline-block"
+                      width="4"
+                      height="4"
+                      viewBox="0 0 4 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="2" cy="2" r="2" fill="#E4E9EE" />
+                    </svg>
+                  </span>
+                  <span class="inline-block font-normal text-black-tint"
+                    >1,238 Sold</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg overflow-hidden">
+              <div class="bg-grey-04 rounded-lg px-5 py-3">
+                <img src="./images/mouse.png" alt="Mouse product image" />
+              </div>
+              <div class="flex items-start pt-5">
+                <h2
+                  class="font-semibold flex-1 tracking-[-0.2px] leading-[1.2] mb-1 text-black-tint line-clamp-2"
+                >
+                  G502 X Lightspeed Wireless Gaming Mouse
+                </h2>
+                <p class="font-semibold text-green-02">$139</p>
+              </div>
+              <div>
+                <p class="text-sm text-grey-01 mb-2">North Purwokerto</p>
+                <div class="flex items-center">
+                  <span class="flex items-center justify-center">
+                    <svg
+                      class="inline-block mr-2"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.4416 2.92507L12.9083 5.85841C13.1083 6.26674 13.6416 6.65841 14.0916 6.73341L16.7499 7.17507C18.4499 7.45841 18.8499 8.69174 17.6249 9.90841L15.5583 11.9751C15.2083 12.3251 15.0166 13.0001 15.1249 13.4834L15.7166 16.0417C16.1833 18.0667 15.1083 18.8501 13.3166 17.7917L10.8249 16.3167C10.3749 16.0501 9.63326 16.0501 9.17492 16.3167L6.68326 17.7917C4.89992 18.8501 3.81659 18.0584 4.28326 16.0417L4.87492 13.4834C4.98326 13.0001 4.79159 12.3251 4.44159 11.9751L2.37492 9.90841C1.15826 8.69174 1.54992 7.45841 3.24992 7.17507L5.90826 6.73341C6.34992 6.65841 6.88326 6.26674 7.08326 5.85841L8.54992 2.92507C9.34992 1.33341 10.6499 1.33341 11.4416 2.92507Z"
+                        fill="#FFA439"
+                      />
+                    </svg>
+                    <span class="text-black-tint text-xs inline-block mr-2"
+                      >4.8</span
+                    >
+                  </span>
+                  <span class="inline-block mr-2">
+                    <svg
+                      class="align-middle inline-block"
+                      width="4"
+                      height="4"
+                      viewBox="0 0 4 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="2" cy="2" r="2" fill="#E4E9EE" />
+                    </svg>
+                  </span>
+                  <span class="inline-block font-normal text-black-tint"
+                    >1,238 Sold</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg overflow-hidden">
+              <div class="bg-grey-04 rounded-lg px-5 py-3">
+                <img src="./images/mouse.png" alt="Mouse product image" />
+              </div>
+              <div class="flex items-start pt-5">
+                <h2
+                  class="font-semibold flex-1 tracking-[-0.2px] leading-[1.2] mb-1 text-black-tint line-clamp-2"
+                >
+                  G502 X Lightspeed Wireless Gaming Mouse
+                </h2>
+                <p class="font-semibold text-green-02">$139</p>
+              </div>
+              <div>
+                <p class="text-sm text-grey-01 mb-2">North Purwokerto</p>
+                <div class="flex items-center">
+                  <span class="flex items-center justify-center">
+                    <svg
+                      class="inline-block mr-2"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.4416 2.92507L12.9083 5.85841C13.1083 6.26674 13.6416 6.65841 14.0916 6.73341L16.7499 7.17507C18.4499 7.45841 18.8499 8.69174 17.6249 9.90841L15.5583 11.9751C15.2083 12.3251 15.0166 13.0001 15.1249 13.4834L15.7166 16.0417C16.1833 18.0667 15.1083 18.8501 13.3166 17.7917L10.8249 16.3167C10.3749 16.0501 9.63326 16.0501 9.17492 16.3167L6.68326 17.7917C4.89992 18.8501 3.81659 18.0584 4.28326 16.0417L4.87492 13.4834C4.98326 13.0001 4.79159 12.3251 4.44159 11.9751L2.37492 9.90841C1.15826 8.69174 1.54992 7.45841 3.24992 7.17507L5.90826 6.73341C6.34992 6.65841 6.88326 6.26674 7.08326 5.85841L8.54992 2.92507C9.34992 1.33341 10.6499 1.33341 11.4416 2.92507Z"
+                        fill="#FFA439"
+                      />
+                    </svg>
+                    <span class="text-black-tint text-xs inline-block mr-2"
+                      >4.8</span
+                    >
+                  </span>
+                  <span class="inline-block mr-2">
+                    <svg
+                      class="align-middle inline-block"
+                      width="4"
+                      height="4"
+                      viewBox="0 0 4 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="2" cy="2" r="2" fill="#E4E9EE" />
+                    </svg>
+                  </span>
+                  <span class="inline-block font-normal text-black-tint"
+                    >1,238 Sold</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- End of Product Search Results -->
           </div>
         </div>
+        <!-- PAGINATION -->
+
+        <div class="flex justify-center items-center pt-8 pb-4">
+          <nav
+            class="isolate inline-flex -space-x-px rounded-md shadow-sm"
+            aria-label="Pagination"
+          >
+            <a
+              href="#"
+              class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+            >
+              <span class="sr-only">Previous</span>
+              <svg
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+            <!-- Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" -->
+            <a
+              href="#"
+              aria-current="page"
+              class="relative z-10 inline-flex items-center px-4 py-2 text-sm font-semibold text-green-02 focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 ring-inset ring-gray-300 ring-1"
+              >1</a
+            >
+            <a
+              href="#"
+              class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-grey-01 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+              >2</a
+            >
+            <span
+              class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-grey-01 ring-1 ring-inset ring-gray-300 focus:outline-offset-0"
+              >...</span
+            >
+            <a
+              href="#"
+              class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-grey-01 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+              >9</a
+            >
+            <a
+              href="#"
+              class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-grey-01 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+              >10</a
+            >
+            <a
+              href="#"
+              class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+            >
+              <span class="sr-only">Next</span>
+              <svg
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </nav>
+        </div>
       </section>
-      
     </main>
   </body>
   <script type="module" src="/main.js"></script>
