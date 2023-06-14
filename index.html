@@ -18,6 +18,7 @@
       <!--Signing Up and Signing In Form-->
       <!--Add the class flex or display flex when needed and remove hidden -->
       <div
+        aria-modal="true"
         id="form"
         class="min-h-screen bg-[#0B0F0E]/50 px-6 py-6 items-center justify-center hidden fixed top-0 left-0 right-0 bottom-0 z-10"
       >
@@ -51,6 +52,7 @@
                   type="email"
                   name="email"
                   id="number"
+                  spellcheck="false"
                   class="block w-full rounded-xl border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-[#818B9C] focus:ring-2 focus:ring-inset focus:ring-green placeholder:text-sm sm:text-sm sm:leading-6 placeholder:font-normal bg-[#F6F8FA]"
                   placeholder="Enter your phone number or email"
                 />
@@ -67,6 +69,7 @@
                   id="input-password"
                   type="password"
                   name="password"
+                  spellcheck="false"
                   id="email"
                   class="block w-full rounded-xl border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-[#818B9C] focus:ring-2 focus:ring-inset focus:ring-green placeholder:text-sm sm:text-sm sm:leading-6 placeholder:font-normal bg-[#F6F8FA]"
                   placeholder="Enter your phone number or email"
@@ -140,6 +143,7 @@
               <div class="flex-1">
                 <input
                   type="text"
+                  spellcheck="false"
                   name="search"
                   id="search"
                   placeholder="Search on lenny..."
@@ -1099,7 +1103,9 @@
         </div>
       </footer>
       <div class="px-6 py-4 bg-[#F1F1F1]">
-        <h3 class="capitalize text-sm text-black-tint mb-3 text-center">COPYRIGHT © LENNY CO., LTD. ALL RIGHTS RESERVED.</h3>
+        <h3 class="capitalize text-sm text-black-tint mb-3 text-center">
+          COPYRIGHT © LENNY CO., LTD. ALL RIGHTS RESERVED.
+        </h3>
         <div class="flex justify-center items-center gap-x-4">
           <p>Terms of Use</p>
           <p>Privacy Policy</p>

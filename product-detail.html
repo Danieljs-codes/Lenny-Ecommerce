@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@1&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lenny - Ecommerce</title>
+  </head>
+  <body class="relative font-grotesk overflow-x-hidden">
+    <nav class="flex items-center px-6 py-4 bg-white border border-grey-02">
+      <!--Logo-->
+      <div class="hidden md:block mr-9">
+        <a href="#"><img src="./images/Logo.svg" alt="" /></a>
+      </div>
+      <!--Search-->
+      <div class="flex flex-1">
+        <div
+          class="w-full rounded-xl border-0 py-3 px-2 md:px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-[#818B9C] focus:ring-2 focus:ring-inset focus:ring-green placeholder:text-sm sm:text-sm sm:leading-6 placeholder:font-normal bg-[#F6F8FA] flex h-11"
+        >
+          <select
+            id="drop-down"
+            name="drop-down"
+            autocomplete="off"
+            class="h-full rounded-md border-0 bg-transparent py-0 pl-3 pr-7 text-black-tint focus:outline-none focus:ring-2 focus:ring-inset text-xs font-medium focus:ring-indigo-600 sm:text-sm hidden md:block"
+          >
+            <option>US</option>
+            <option>CA</option>
+            <option>EU</option>
+          </select>
+          <span
+            class="w-[.0625rem] hidden md:inline-block h-full bg-grey-02 ml-5 mr-4"
+          ></span>
+          <div class="flex items-center flex-1">
+            <div class="flex-1">
+              <input
+                type="text"
+                name="search"
+                spellcheck="false"
+                autocomplete="off"
+                id="search"
+                placeholder="Search on lenny..."
+                class="w-full bg-transparent outline-0 outline-transparent border-0 border-transparent focus:ring-0 focus:border-transparent placeholder:text-xs placeholder:text-grey-01 text-sm font-medium text-grey-01 px-2 py-3"
+              />
+            </div>
+            <button>
+              <div>
+                <svg
+                  class="inline-block"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                    stroke="#C4C8CC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22 22L20 20"
+                    stroke="#C4C8CC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Search End -->
+      <!--Icons-->
+      <div class="icons ml-4 lg:ml-12 flex gap-x-4">
+        <button>
+          <img src="./images/shopping-cart.svg" alt="Shopping Cart Icon" />
+        </button>
+        <button class="relative isolate">
+          <img src="./images/notification.svg" alt="" />
+          <span
+            class="rounded-full bg-danger absolute text-white text-[.5625rem] font-medium h-[18px] w-[18px] flex justify-center items-center -right-2 -top-2 md:top-1 border-[.0938rem] border-white"
+            >6</span
+          >
+        </button>
+        <button class="relative isolate">
+          <img src="./images/sms.svg" alt="" />
+          <span
+            class="rounded-full bg-danger absolute text-white text-[.5625rem] font-medium h-[18px] w-[18px] flex justify-center items-center -right-2 -top-2 md:top-1 border-[.0938rem] border-white"
+            >6</span
+          >
+        </button>
+        <span class="bg-grey-02 w-[.0625rem] inline-block"></span>
+        <button class="md:hidden">
+          <img src="./images/menu.svg" alt="" />
+        </button>
+        <button class="hidden md:block">
+          <div class="w-12 h-12">
+            <img
+              class="bg-cover bg-no-repeat bg-center"
+              src="./images/defaultPfp.svg"
+              alt="Profile Picture"
+            />
+          </div>
+        </button>
+      </div>
+      <!--End of Icons-->
+      <div class="account"></div>
+    </nav>
+    <section class="bg-white px-6">
+      <!-- BreadCrumbs -->
+      <nav class="flex pb-4 pt-4" aria-label="Breadcrumb">
+        <ol role="list" class="flex items-center space-x-2">
+          <li>
+            <div>
+              <a href="#" class="text-green-02 font-medium text-xs">
+                <span class="text-green-02">Home</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <svg
+                class="flex-shrink-0 text-gray-400"
+                width="12"
+                height="13"
+                viewBox="0 0 12 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.45508 10.46L7.71508 7.20004C8.10008 6.81504 8.10008 6.18504 7.71508 5.80004L4.45508 2.54004"
+                  stroke="#818B9C"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <a href="#" class="ml-2 text-xs font-medium text-green-02"
+                >Electronic</a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <svg
+                class="flex-shrink-0 text-gray-400"
+                width="12"
+                height="13"
+                viewBox="0 0 12 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.45508 10.46L7.71508 7.20004C8.10008 6.81504 8.10008 6.18504 7.71508 5.80004L4.45508 2.54004"
+                  stroke="#818B9C"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <a
+                href="#"
+                class="ml-2 font-medium text-xs hover:text-gray-700 text-black-tint line-clamp-1"
+                aria-current="page"
+                >G502 x Lightspeed Wireless Gaming Mouse</a
+              >
+            </div>
+          </li>
+        </ol>
+      </nav>
+      <!-- End of BreadCrumbs -->
+      <div
+        class="grid grid-rows-2 grid-cols-1 md:grid-cols-2 md:grid-rows-1 gap-x-8 gap-y-6"
+      >
+        <div class="md:sticky md:top-0">
+          <div class="bg-blue-300 h-full"></div>
+        </div>
+        <div>
+          <div class="mb-4">
+            <h1 class="text-black-tint font-semibold text-2xl mb-1">
+              G502 X Lightspeed Wireless Gaming Mouse
+            </h1>
+            <div class="flex items-center mb-4">
+              <span class="inline-block mr-2">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.4421 2.92507L12.9087 5.85841C13.1087 6.26674 13.6421 6.65841 14.0921 6.73341L16.7504 7.17507C18.4504 7.45841 18.8504 8.69174 17.6254 9.90841L15.5587 11.9751C15.2087 12.3251 15.0171 13.0001 15.1254 13.4834L15.7171 16.0417C16.1837 18.0667 15.1087 18.8501 13.3171 17.7917L10.8254 16.3167C10.3754 16.0501 9.63375 16.0501 9.17541 16.3167L6.68375 17.7917C4.90041 18.8501 3.81708 18.0584 4.28375 16.0417L4.87541 13.4834C4.98375 13.0001 4.79208 12.3251 4.44208 11.9751L2.37541 9.90841C1.15875 8.69174 1.55041 7.45841 3.25041 7.17507L5.90875 6.73341C6.35041 6.65841 6.88375 6.26674 7.08375 5.85841L8.55041 2.92507C9.35041 1.33341 10.6504 1.33341 11.4421 2.92507Z"
+                    fill="#FFA439"
+                  />
+                </svg>
+              </span>
+              <p class="text-black-tint mr-2 text-sm">4,8</p>
+              <span class="inline-block mr-2"
+                ><svg
+                  width="4"
+                  height="4"
+                  viewBox="0 0 4 4"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="2" cy="2" r="2" fill="#E4E9EE" />
+                </svg>
+              </span>
+              <p class="text-black-tint mr-2 text-sm">1,288</p>
+            </div>
+            <p class="text-xl text-green-02 font-semibold">$139.99</p>
+          </div>
+          <div>
+            <p class="line-clamp-3 text-grey-01 mb-6">
+              G502 X LIGHTSPEED is the latest addition to legendary G502
+              lineage. Featuring our first-ever LIGHTFORCE hybrid
+              optical-mechanical
+            </p>
+          </div>
+          <span class="block h-[.0625rem] bg-grey-02 mb-6"></span>
+          <!-- Select Menus -->
+          <!-- Select Menus -->
+          <!-- Select Menus -->
+          <!-- Select Menus -->
+          <div class="flex gap-x-4">
+            <div>
+              <label
+                id="listbox-label"
+                class="block text-sm font-medium leading-6 text-gray-900"
+                >Type</label
+              >
+              <div class="relative mt-2">
+                <button
+                  id="select-menu_button"
+                  type="button"
+                  class="relative w-full cursor-default rounded-md bg-white py-3 pl-4 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-grey-02 focus:outline-none focus:ring-2 focus:ring-green sm:text-sm sm:leading-6 mr-10"
+                  aria-haspopup="listbox"
+                  aria-expanded="true"
+                  aria-labelledby="listbox-label"
+                >
+                  <span class="block truncate">Tom Cook</span>
+                  <span
+                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4"
+                  >
+                    <svg
+                      class="h-5 w-5 text-gray-400"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 3a.75.75 0 01.55.24l3.25 3.5a.75.75 0 11-1.1 1.02L10 4.852 7.3 7.76a.75.75 0 01-1.1-1.02l3.25-3.5A.75.75 0 0110 3zm-3.76 9.2a.75.75 0 011.06.04l2.7 2.908 2.7-2.908a.75.75 0 111.1 1.02l-3.25 3.5a.75.75 0 01-1.1 0l-3.25-3.5a.75.75 0 01.04-1.06z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </button>
+
+                <!--
+                  Select popover, show/hide based on select state.
+            
+                  Entering: ""
+                    From: ""
+                    To: ""
+                  Leaving: "transition ease-in duration-100"
+                    From: "opacity-100"
+                    To: "opacity-0"
+                -->
+                <ul
+                  class="selectMenu opacity-0 absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-green ring-opacity-5 focus:outline-none sm:text-sm"
+                  tabindex="-1"
+                  role="listbox"
+                  aria-labelledby="listbox-label"
+                  aria-activedescendant="listbox-option-3"
+                >
+                  <!--
+                    Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
+            
+                    Highlighted: "bg-indigo-600 text-white", Not Highlighted: "text-gray-900"
+                  -->
+                  <li
+                    class="select-name text-gray-900 relative cursor-default select-none py-2 pl-3 pr-9"
+                    id="listbox-option-0"
+                    role="option"
+                  >
+                    <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+                    <span class="font-normal block truncate">Manual</span>
+
+                    <!--
+                      Checkmark, only display for selected option.
+            
+                      Highlighted: "text-white", Not Highlighted: "text-indigo-600"
+                    -->
+                  </li>
+                  <li
+                    class="select-name text-gray-900 relative cursor-default select-none py-2 pl-3 pr-9"
+                    id="listbox-option-0"
+                    role="option"
+                  >
+                    <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+                    <span id="select-name" class="font-normal block truncate"
+                      >Wireless</span
+                    >
+                  </li>
+                  <li
+                    class="select-name text-gray-900 relative cursor-default select-none py-2 pl-3 pr-9"
+                    id="listbox-option-0"
+                    role="option"
+                  >
+                    <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+                    <span id="select-name" class="font-normal block truncate"
+                      >Electronics</span
+                    >
+                  </li>
+
+                  <!-- More items... -->
+                </ul>
+              </div>
+            </div>
+            <div>
+              <label
+                id="listbox-label"
+                class="block text-sm font-medium leading-6 text-gray-900"
+                >Color</label
+              >
+              <div class="relative mt-2">
+                <button
+                  id="select-menu_button"
+                  type="button"
+                  class="relative w-full cursor-default rounded-md bg-white py-3 pl-4 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-grey-02 focus:outline-none focus:ring-2 focus:ring-green sm:text-sm sm:leading-6 mr-10"
+                  aria-haspopup="listbox"
+                  aria-expanded="true"
+                  aria-labelledby="listbox-label"
+                >
+                  <span class="block truncate">Tom Cook</span>
+                  <span
+                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4"
+                  >
+                    <svg
+                      class="h-5 w-5 text-gray-400"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 3a.75.75 0 01.55.24l3.25 3.5a.75.75 0 11-1.1 1.02L10 4.852 7.3 7.76a.75.75 0 01-1.1-1.02l3.25-3.5A.75.75 0 0110 3zm-3.76 9.2a.75.75 0 011.06.04l2.7 2.908 2.7-2.908a.75.75 0 111.1 1.02l-3.25 3.5a.75.75 0 01-1.1 0l-3.25-3.5a.75.75 0 01.04-1.06z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </button>
+
+                <!--
+                  Select popover, show/hide based on select state.
+            
+                  Entering: ""
+                    From: ""
+                    To: ""
+                  Leaving: "transition ease-in duration-100"
+                    From: "opacity-100"
+                    To: "opacity-0"
+                -->
+                <ul
+                  class="selectMenu opacity-0 absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-green ring-opacity-5 focus:outline-none sm:text-sm"
+                  tabindex="-1"
+                  role="listbox"
+                  aria-labelledby="listbox-label"
+                  aria-activedescendant="listbox-option-3"
+                >
+                  <!--
+                    Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
+            
+                    Highlighted: "bg-indigo-600 text-white", Not Highlighted: "text-gray-900"
+                  -->
+                  <li
+                    class="select-name text-gray-900 relative cursor-default select-none py-2 pl-3 pr-9"
+                    id="listbox-option-0"
+                    role="option"
+                  >
+                    <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+                    <span class="font-normal block truncate">Manual</span>
+
+                    <!--
+                      Checkmark, only display for selected option.
+            
+                      Highlighted: "text-white", Not Highlighted: "text-indigo-600"
+                    -->
+                  </li>
+                  <li
+                    class="select-name text-gray-900 relative cursor-default select-none py-2 pl-3 pr-9"
+                    id="listbox-option-0"
+                    role="option"
+                  >
+                    <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+                    <span id="select-name" class="font-normal block truncate"
+                      >Wireless</span
+                    >
+                  </li>
+                  <li
+                    class="select-name text-gray-900 relative cursor-default select-none py-2 pl-3 pr-9"
+                    id="listbox-option-0"
+                    role="option"
+                  >
+                    <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+                    <span id="select-name" class="font-normal block truncate"
+                      >Electronics</span
+                    >
+                  </li>
+
+                  <!-- More items... -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-y-3 text-center pt-8 text-sm font-semibold"
+          >
+            <a
+              class="block py-[.875rem] bg-green text-white rounded-lg"
+              href="#"
+              >Buy Now</a
+            >
+            <a
+              class="block py-3 border border-green bg-transparent text-green rounded-lg"
+              href="#"
+              ><span class="inline-block mr-2"
+                ><svg
+                  class="inline-block align-middle"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 2.5H4.24001C5.32001 2.5 6.17 3.43 6.08 4.5L5.25 14.46C5.11 16.09 6.39999 17.49 8.03999 17.49H18.69C20.13 17.49 21.39 16.31 21.5 14.88L22.04 7.38C22.16 5.72 20.9 4.37 19.23 4.37H6.32001"
+                    stroke="#1E4C2F"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16.75 22.5C17.4404 22.5 18 21.9404 18 21.25C18 20.5596 17.4404 20 16.75 20C16.0596 20 15.5 20.5596 15.5 21.25C15.5 21.9404 16.0596 22.5 16.75 22.5Z"
+                    stroke="#1E4C2F"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.75 22.5C9.44036 22.5 10 21.9404 10 21.25C10 20.5596 9.44036 20 8.75 20C8.05964 20 7.5 20.5596 7.5 21.25C7.5 21.9404 8.05964 22.5 8.75 22.5Z"
+                    stroke="#1E4C2F"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.5 8.5H21.5"
+                    stroke="#1E4C2F"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg> </span
+              >Add to Cart</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- End of Product Showcase Grid -->
+      <div class="pt-10">
+        <div class="border-b border-gray-200 overflow-x-scroll no-scrollbar">
+          <nav class="-mb-px flex space-x-8" aria-label="Tabs">
+            <!-- Current: "border-green text-green font-semibold", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 font-medium" -->
+            <button
+              class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium"
+            >
+              Detail Product
+            </button>
+            <button
+              class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium"
+            >
+              Merchant
+            </button>
+            <button
+              class="border-green text-green whitespace-nowrap border-b-2 py-4 px-1 text-sm font-semibold"
+              aria-current="page"
+            >
+              Reviews
+            </button>
+            <button
+              class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium"
+            >
+              Related Product
+            </button>
+          </nav>
+        </div>
+        <div class="pt-6"></div>
+      </div>
+      <div class="h-96"></div>
+      <!-- <div class="grid grid-cols-2 grid-rows-1">
+        <div class="bg-blue-300 sticky h-[31.25rem] top-0"></div>
+        <div class="h-[2000px]"></div>
+      </div> -->
+    </section>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
