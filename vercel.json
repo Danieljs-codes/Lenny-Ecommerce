@@ -1,8 +1,5 @@
 {
-  "routes": [
-    { "src": "./index.html", "dest": "./index.html" },
-    { "src": "./search.html", "dest": "./search.html" },
-    { "src": "./product-detail.html", "dest": "./product-detail.html" }
-    
+  "rewrites": [
+    { "source": "/:page", "destination": "/:page.html" }
   ]
 }
