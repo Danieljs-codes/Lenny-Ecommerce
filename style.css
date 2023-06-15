@@ -8,3 +8,11 @@
     display: none;
   }
 }
+
+.tables tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.tables tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
