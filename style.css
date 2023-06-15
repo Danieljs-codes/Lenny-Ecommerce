@@ -9,6 +9,11 @@
   }
 }
 
+
+html {
+  overflow-x: hidden;
+}
+
 .tables tr:nth-child(even) {
   background-color: #fff;
 }
