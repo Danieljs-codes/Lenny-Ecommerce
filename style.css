@@ -21,3 +21,26 @@ html {
 .tables tr:nth-child(odd) {
   background-color: #f9f9f9;
 }
+
+
+:root {
+  --progress: 240deg;
+}
+.circle {
+  /* background: conic-gradient(#c74aae 240deg, #fff 0deg); */
+  background: conic-gradient(#FFA439 var(--progress), #E4E9EE 0deg);
+  border-radius: 50%;
+  transform: rotate(-270deg);
+}
+.circle-progress::before {
+    content: "";
+    position: absolute;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.ola {
+  transform: rotate(270deg);
+}

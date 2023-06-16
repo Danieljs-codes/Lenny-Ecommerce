@@ -198,3 +198,19 @@ selectButton.addEventListener('click', function (e) {
   }
   console.log('Button');
 });
+
+
+const ratings = 4.3
+
+const calculateRating = function (rating) {
+  const ratingPercentage = rating * 72
+  return ratingPercentage + 'deg'
+}
+const root = document.documentElement;
+
+root.style.setProperty('--progress', calculateRating(ratings));
+
+
+const circleText = document.querySelector('.circle-text')
+
+circleText.textContent = ratings
