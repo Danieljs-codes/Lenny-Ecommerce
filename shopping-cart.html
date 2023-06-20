@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@1&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lenny - Ecommerce</title>
+  </head>
+  <body class="relative font-grotesk overflow-x-hidden">
+    <nav class="flex items-center px-6 py-4 bg-white border border-grey-02">
+      <!--Logo-->
+      <div class="hidden md:block mr-9">
+        <a href="#"><img src="./images/Logo.svg" alt="" /></a>
+      </div>
+      <!--Search-->
+      <div class="flex flex-1">
+        <div
+          class="w-full rounded-xl border-0 py-3 px-2 md:px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-[#818B9C] focus:ring-2 focus:ring-inset focus:ring-green placeholder:text-sm sm:text-sm sm:leading-6 placeholder:font-normal bg-[#F6F8FA] flex h-11"
+        >
+          <select
+            id="drop-down"
+            name="drop-down"
+            autocomplete="off"
+            class="h-full rounded-md border-0 bg-transparent py-0 pl-3 pr-7 text-black-tint focus:outline-none focus:ring-2 focus:ring-inset text-xs font-medium focus:ring-indigo-600 sm:text-sm hidden md:block"
+          >
+            <option>US</option>
+            <option>CA</option>
+            <option>EU</option>
+          </select>
+          <span
+            class="w-[1px] hidden md:inline-block h-full bg-grey-02 ml-5 mr-4"
+          ></span>
+          <div class="flex items-center flex-1">
+            <div class="flex-1">
+              <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Search on lenny..."
+                class="w-full bg-transparent outline-0 outline-transparent border-0 border-transparent focus:ring-0 focus:border-transparent placeholder:text-xs placeholder:text-grey-01 text-sm font-medium text-grey-01 px-2 py-3"
+              />
+            </div>
+            <button>
+              <div>
+                <svg
+                  class="inline-block"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                    stroke="#C4C8CC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22 22L20 20"
+                    stroke="#C4C8CC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Search End -->
+      <!--Icons-->
+      <div class="icons ml-4 lg:ml-12 flex gap-x-4">
+        <button>
+          <img src="./images/shopping-cart.svg" alt="Shopping Cart Icon" />
+        </button>
+        <button class="relative isolate">
+          <img src="./images/notification.svg" alt="" />
+          <span
+            class="rounded-full bg-danger absolute text-white text-[9px] font-medium h-[1.125rem] w-[1.125rem] flex justify-center items-center -right-2 -top-2 md:top-1 border-[1.5px] border-white"
+            >6</span
+          >
+        </button>
+        <button class="relative isolate">
+          <img src="./images/sms.svg" alt="" />
+          <span
+            class="rounded-full bg-danger absolute text-white text-[9px] font-medium h-[1.125rem] w-[1.125rem] flex justify-center items-center -right-2 -top-2 md:top-1 border-[1.5px] border-white"
+            >6</span
+          >
+        </button>
+        <span class="bg-grey-02 w-[1px] inline-block"></span>
+        <button class="md:hidden">
+          <img src="./images/menu.svg" alt="" />
+        </button>
+        <button class="hidden md:block">
+          <div class="w-12 h-12">
+            <img
+              class="bg-cover bg-no-repeat bg-center"
+              src="./images/defaultPfp.svg"
+              alt="Profile Picture"
+            />
+          </div>
+        </button>
+      </div>
+      <!--End of Icons-->
+      <div class="account"></div>
+    </nav>
+    <!--End of Navbar-->
+    <section class="pt-8 px-6">
+      <div class="text-black-tint">
+        <h1 class="font-semibold capitalize tracking-[-0.2px] text-xl mb-1">
+          shopping Cart
+        </h1>
+        <p class="text-xs text-grey-01 mb-6">Showing your product choices</p>
+        <div class="mb-8">
+          <div>
+            <label
+              id="listbox-label"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Assigned to</label
+            >
+            <div class="relative mt-2">
+              <button
+                type="button"
+                class="relative w-full cursor-default rounded-md bg-white py-3 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                aria-haspopup="listbox"
+                aria-expanded="true"
+                aria-labelledby="listbox-label"
+              >
+                <span class="block truncate capitalize"
+                  >Sort by latest added</span
+                >
+                <span
+                  class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4"
+                >
+                  <svg
+                    class="text-gray-400"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.96004 4.4751L6.70004 7.7351C6.31504 8.1201 5.68504 8.1201 5.30004 7.7351L2.04004 4.4751"
+                      stroke="#0B0F0E"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </button>
+
+              <!--
+                Select popover, show/hide based on select state.
+          
+                Entering: ""
+                  From: ""
+                  To: ""
+                Leaving: "transition ease-in duration-100"
+                  From: "opacity-100"
+                  To: "opacity-0"
+              -->
+              <ul
+                class="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm opacity-0"
+                tabindex="-1"
+                role="listbox"
+                aria-labelledby="listbox-label"
+                aria-activedescendant="listbox-option-3"
+              >
+                <!--
+                  Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
+          
+                  Highlighted: "bg-indigo-600 text-white", Not Highlighted: "text-gray-900"
+                -->
+                <li
+                  class="text-gray-900 relative cursor-default select-none py-2 pl-3 pr-9"
+                  id="listbox-option-0"
+                  role="option"
+                >
+                  <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+                  <span class="font-normal block truncate">Wade Cooper</span>
+
+                  <!--
+                    Checkmark, only display for selected option.
+          
+                    Highlighted: "text-white", Not Highlighted: "text-indigo-600"
+                  -->
+                  <span
+                    class="text-indigo-600 absolute inset-y-0 right-0 flex items-center pr-4"
+                  >
+                    <svg
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </li>
+
+                <!-- More items... -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 rounded-xl border border-grey-02 bg-white">
+          <div class="flex gap-x-2 items-center mb-6">
+            <img
+              class="w-10 h-10 rounded-full border border-[#F1F1F1]"
+              src="./images/company.png"
+              alt="Company Logo"
+            />
+            <div>
+              <div class="font-semibold text-xs mb-1">Logitech Indonesia</div>
+              <p class="text-grey-01 text-[0.625rem]">Central Jakarta</p>
+            </div>
+          </div>
+          <div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
