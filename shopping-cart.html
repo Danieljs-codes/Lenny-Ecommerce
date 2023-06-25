@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lenny - Ecommerce</title>
   </head>
-  <body class="relative font-grotesk overflow-x-hidden">
+  <body class="relative font-grotesk overflow-x-hidden isolate">
     <nav class="flex items-center px-6 py-4 bg-white border border-grey-02">
       <!--Logo-->
       <div class="hidden md:block mr-9">
@@ -112,6 +112,7 @@
       <div class="account"></div>
     </nav>
     <!--End of Navbar-->
+    <div class="absolute w-full h-[21.2 5rem] top-0 left-0 -z-10 bg-grey-03"></div>
     <section class="pt-8 px-6">
       <div class="text-black-tint">
         <h1 class="font-semibold capitalize tracking-[-0.2px] text-xl mb-1">
@@ -217,24 +218,827 @@
             </div>
           </div>
         </div>
-        <div class="p-4 rounded-xl border border-grey-02 bg-white">
-          <div class="flex gap-x-2 items-center mb-6">
-            <img
-              class="w-10 h-10 rounded-full border border-[#F1F1F1]"
-              src="./images/company.png"
-              alt="Company Logo"
-            />
+        <div
+          class="p-4 rounded-xl border border-grey-02 bg-white text-black-tint"
+        >
+          <div>
+            <div class="flex gap-x-2 items-center">
+              <img
+                class="w-10 h-10 rounded-full border border-[#F1F1F1]"
+                src="./images/company.png"
+                alt="Company Logo"
+              />
+              <div>
+                <div class="font-semibold text-xs mb-1">Logitech Indonesia</div>
+                <p class="text-grey-01 text-[0.625rem]">Central Jakarta</p>
+              </div>
+            </div>
             <div>
-              <div class="font-semibold text-xs mb-1">Logitech Indonesia</div>
-              <p class="text-grey-01 text-[0.625rem]">Central Jakarta</p>
+              <div class="flex items-center gap-x-4 pt-6">
+                <input
+                  id="comments"
+                  aria-describedby="comments-description"
+                  name="comments"
+                  type="checkbox"
+                  class="h-4 w-4 rounded border-gray-300 text-green focus:ring-green"
+                />
+                <div class="flex gap-x-3">
+                  <div class="p-2 bg-grey-04 rounded-lg">
+                    <img
+                      class="w-9 h-9"
+                      src="./images/product-cart.png"
+                      alt="HeadPhones"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-sm leading-[140%]">
+                      Logitech G435 Gaming Headset
+                    </h3>
+                    <p class="text-grey-01 text-[.625rem] mb-1">
+                      Central Jakarta
+                    </p>
+                    <div
+                      class="text-sm font-semibold tracking-[-0.0125rem] text-green-02"
+                      aria-label="Price of product"
+                    >
+                      $280
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <h4 class="flex-1 text-grey-01 text-[.625rem] leading-[160%]">
+                  Add to Favorite
+                </h4>
+                <div class="flex gap-x-4">
+                  <div
+                    tabindex="0"
+                    class="p-2 rounded-lg border focus:border-green"
+                  >
+                    <div class="flex items-center h-fit">
+                      <button class="minus">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6.66699 10H13.3337"
+                            stroke="#C4C8CC"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </button>
+                      <input
+                        class="focus:ring-0 outline-0 border-0 text-center w-8 px-1 py-0"
+                        type="number"
+                        min="1"
+                        max="25"
+                        type="number"
+                        value="1"
+                      />
+                      <button class="plus">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6.66699 10H13.3337"
+                            stroke="#1D9E34"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M10 13.3333V6.66663"
+                            stroke="#1D9E34"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <button
+                    class="rounded-lg border focus:border-green flex-shrink-0 px-3"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 h-5"
+                    >
+                      <path
+                        d="M14 3.98665C11.78 3.76665 9.54667 3.65332 7.32 3.65332C6 3.65332 4.68 3.71999 3.36 3.85332L2 3.98665"
+                        stroke="#0B0F0E"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.66699 3.31337L5.81366 2.44004C5.92033 1.80671 6.00033 1.33337 7.12699 1.33337H8.87366C10.0003 1.33337 10.087 1.83337 10.187 2.44671L10.3337 3.31337"
+                        stroke="#0B0F0E"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.5669 6.09338L12.1336 12.8067C12.0603 13.8534 12.0003 14.6667 10.1403 14.6667H5.86026C4.00026 14.6667 3.94026 13.8534 3.86693 12.8067L3.43359 6.09338"
+                        stroke="#0B0F0E"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.88672 11H9.10672"
+                        stroke="#0B0F0E"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.33301 8.33337H9.66634"
+                        stroke="#0B0F0E"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="my-6 h-[1px] bg-grey-02"></div>
             </div>
           </div>
           <div>
-            
+            <div class="flex gap-x-2 items-center">
+              <img
+                class="w-10 h-10 rounded-full border border-[#F1F1F1]"
+                src="./images/company.png"
+                alt="Company Logo"
+              />
+              <div>
+                <div class="font-semibold text-xs mb-1">Logitech Indonesia</div>
+                <p class="text-grey-01 text-[0.625rem]">Central Jakarta</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center gap-x-4 pt-6">
+                <input
+                  id="comments"
+                  aria-describedby="comments-description"
+                  name="comments"
+                  type="checkbox"
+                  class="h-4 w-4 rounded border-gray-300 text-green focus:ring-green"
+                />
+                <div class="flex gap-x-3">
+                  <div class="p-2 bg-grey-04 rounded-lg">
+                    <img
+                      class="w-9 h-9"
+                      src="./images/product-cart.png"
+                      alt="HeadPhones"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-sm leading-[140%]">
+                      Logitech G435 Gaming Headset
+                    </h3>
+                    <p class="text-grey-01 text-[.625rem] mb-1">
+                      Central Jakarta
+                    </p>
+                    <div
+                      class="text-sm font-semibold tracking-[-0.0125rem] text-green-02"
+                      aria-label="Price of product"
+                    >
+                      $280
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <h4 class="flex-1 text-grey-01 text-[.625rem] leading-[160%]">
+                  Add to Favorite
+                </h4>
+                <div class="flex gap-x-4">
+                  <div
+                    tabindex="0"
+                    class="p-2 rounded-lg border focus:border-green"
+                  >
+                    <div class="flex items-center h-fit">
+                      <button class="minus">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6.66699 10H13.3337"
+                            stroke="#C4C8CC"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </button>
+                      <input
+                        class="focus:ring-0 outline-0 border-0 text-center w-8 px-1 py-0"
+                        type="number"
+                        min="1"
+                        max="25"
+                        type="number"
+                        value="1"
+                      />
+                      <button class="plus">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6.66699 10H13.3337"
+                            stroke="#1D9E34"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M10 13.3333V6.66663"
+                            stroke="#1D9E34"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <button
+                    class="rounded-lg border focus:border-green flex-shrink-0 px-3"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 h-5"
+                    >
+                      <path
+                        d="M14 3.98665C11.78 3.76665 9.54667 3.65332 7.32 3.65332C6 3.65332 4.68 3.71999 3.36 3.85332L2 3.98665"
+                        stroke="#0B0F0E"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.66699 3.31337L5.81366 2.44004C5.92033 1.80671 6.00033 1.33337 7.12699 1.33337H8.87366C10.0003 1.33337 10.087 1.83337 10.187 2.44671L10.3337 3.31337"
+                        stroke="#0B0F0E"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.5669 6.09338L12.1336 12.8067C12.0603 13.8534 12.0003 14.6667 10.1403 14.6667H5.86026C4.00026 14.6667 3.94026 13.8534 3.86693 12.8067L3.43359 6.09338"
+                        stroke="#0B0F0E"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.88672 11H9.10672"
+                        stroke="#0B0F0E"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.33301 8.33337H9.66634"
+                        stroke="#0B0F0E"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="my-6 h-[1px] last:hidden bg-grey-02"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Product Summary -->
+      <div
+        class="py-6 md:px-6 md:border md:rounded-xl md:border-grey-02 text-black-tint"
+      >
+        <h2
+          class="font-semibold text-base tracking-[-0.0125rem] mb-6 capitalize"
+        >
+          Product Summary
+        </h2>
+        <p class="capitalize text-sm">No product Selected</p>
+        <div class="my-6 h-[1px] bg-grey-02"></div>
+        <div class="flex flex-col gap-y-3">
+          <div class="flex text-grey-01 text-sm items-center">
+            <p class="flex-1">Total Price</p>
+            <p class="">$280</p>
+          </div>
+          <div class="flex text-grey-01 text-sm items-center">
+            <p class="flex-1">Total Price (Discount)</p>
+            <p class="">$98</p>
+          </div>
+          <div class="flex text-grey-01 text-sm items-center">
+            <p class="flex-1">Tax & Fee</p>
+            <p class="">$46</p>
+          </div>
+        </div>
+        <div class="my-6 h-[1px] bg-grey-02"></div>
+        <div
+          class="flex text-black-tint text-base tracking-[-0.0125rem] items-center font-semibold mb-6"
+        >
+          <p class="flex-1">Total Price</p>
+          <p class="">$385</p>
+        </div>
+        <div
+          class="rounded-xl border border-grey-02 text-black-tint text-sm flex items-center p-3"
+        >
+          <div class="flex-1">
+            <div class="flex gap-x-3 items-center">
+              <div>
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.32408 12.717L2.05742 11.4504C1.54076 10.9337 1.54076 10.0837 2.05742 9.56701L3.32408 8.30033C3.54075 8.08366 3.71575 7.65866 3.71575 7.35866V5.56697C3.71575 4.83364 4.31575 4.23366 5.04909 4.23366H6.84075C7.14075 4.23366 7.56575 4.05869 7.78242 3.84202L9.04908 2.57534C9.56574 2.05867 10.4158 2.05867 10.9324 2.57534L12.1991 3.84202C12.4158 4.05869 12.8407 4.23366 13.1407 4.23366H14.9324C15.6658 4.23366 16.2657 4.83364 16.2657 5.56697V7.35866C16.2657 7.65866 16.4407 8.08366 16.6574 8.30033L17.9241 9.56701C18.4408 10.0837 18.4408 10.9337 17.9241 11.4504L16.6574 12.717C16.4407 12.9337 16.2657 13.3587 16.2657 13.6587V15.4503C16.2657 16.1836 15.6658 16.7837 14.9324 16.7837H13.1407C12.8407 16.7837 12.4158 16.9587 12.1991 17.1754L10.9324 18.442C10.4158 18.9587 9.56574 18.9587 9.04908 18.442L7.78242 17.1754C7.56575 16.9587 7.14075 16.7837 6.84075 16.7837H5.04909C4.31575 16.7837 3.71575 16.1836 3.71575 15.4503V13.6587C3.71575 13.3504 3.54075 12.9254 3.32408 12.717Z"
+                    stroke="#1D9E34"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.5 13L12.5 8"
+                    stroke="#1D9E34"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12.0791 12.5833H12.0866"
+                    stroke="#1D9E34"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.91209 8.41667H7.91957"
+                    stroke="#1D9E34"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p class="font-semibold text-sm mb-0.5">Promo applied</p>
+                <p class="text-grey-01 text-xs">1x shipping discount used</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.94043 13.28L10.2871 8.93333C10.8004 8.42 10.8004 7.58 10.2871 7.06667L5.94043 2.72"
+                stroke="#0B0F0E"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <a class="bg-green block py-4 text-center text-white rounded-lg mt-10 font-semibold px-4" href="/checkout">Checkout</a>
+      </div>
+    </section>
+    <section class="px-6 relative overflow-x-hidden">
+      <div class="text-black-tint pt-6 mb-14">
+        <div class="flex items-center mb-8">
+          <h2 class="flex-1 font-semibold">Related Product</h2>
+          <a
+            class="border rounded-lg border-green font-semibold text-sm text-green px-3 py-[0.375rem]"
+            href="#"
+            >View Detail</a
+          >
+        </div>
+        <div
+          class="grid lg:grid-cols-4 lg:grid-rows-2 grid-cols-2 grid-rows-2 place-items-center gap-y-8 lg:gap-x-6 gap-x-2"
+        >
+          <div class="rounded-lg overflow-hidden">
+            <div class="p-[3.125rem] bg-grey-04 rounded-lg relative isolate">
+              <div
+                class="absolute bg-white flex justify-center items-center w-9 h-9 top-2 right-2 rounded-full"
+              >
+                <!-- The fill:#E04124  and the stroke:#E04124 color wishlist -->
+                <svg
+                  class="inline-block"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.5166 17.3416C10.2333 17.4416 9.76663 17.4416 9.48329 17.3416C7.06663 16.5166 1.66663 13.075 1.66663 7.24165C1.66663 4.66665 3.74163 2.58331 6.29996 2.58331C7.81663 2.58331 9.15829 3.31665 9.99996 4.44998C10.8416 3.31665 12.1916 2.58331 13.7 2.58331C16.2583 2.58331 18.3333 4.66665 18.3333 7.24165C18.3333 13.075 12.9333 16.5166 10.5166 17.3416Z"
+                    stroke="#0B0F0E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img class="p-0 m-0" src="./images/cloth.png" alt="Product" />
+            </div>
+            <div class="lg:pt-4 pt-3 bg-white w-full">
+              <div class="flex">
+                <h3
+                  class="flex-1 text-black-tint text-sm w-[6.5625rem] lg:w-auto whitespace-nowrap overflow-hidden text-ellipsis lg:text-xl font-semibold mr-8"
+                >
+                  Spy x Family Tshirt
+                </h3>
+                <span
+                  class="inline-block text-green-02 text-sm lg:text-xl font-semibold text-right"
+                  >$28</span
+                >
+              </div>
+              <div
+                class="text-grey-01 lg:text-base text-xs font-normal lg:pt-1 pb-2"
+              >
+                North Purwokerto
+              </div>
+              <div class="flex items-center">
+                <span class="flex items-center gap-x-2 mr-5">
+                  <svg
+                    class="inline-block"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.7299 3.51014L15.4899 7.03014C15.7299 7.52014 16.3699 7.99014 16.9099 8.08014L20.0999 8.61014C22.1399 8.95014 22.6199 10.4301 21.1499 11.8901L18.6699 14.3701C18.2499 14.7901 18.0199 15.6001 18.1499 16.1801L18.8599 19.2501C19.4199 21.6801 18.1299 22.6201 15.9799 21.3501L12.9899 19.5801C12.4499 19.2601 11.5599 19.2601 11.0099 19.5801L8.01991 21.3501C5.87991 22.6201 4.57991 21.6701 5.13991 19.2501L5.84991 16.1801C5.97991 15.6001 5.74991 14.7901 5.32991 14.3701L2.84991 11.8901C1.38991 10.4301 1.85991 8.95014 3.89991 8.61014L7.08991 8.08014C7.61991 7.99014 8.25991 7.52014 8.49991 7.03014L10.2599 3.51014C11.2199 1.60014 12.7799 1.60014 13.7299 3.51014Z"
+                      fill="#FFA439"
+                    />
+                  </svg>
+                  <span
+                    class="inline-block font-normal text-xs lg:text-base text-black-tint"
+                    >4.8</span
+                  >
+                </span>
+                <div
+                  class="inline-block font-normal text-xs lg:text-base text-black-tint"
+                >
+                  1,238 Sold
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-lg overflow-hidden">
+            <div class="p-[3.125rem] bg-grey-04 rounded-lg relative isolate">
+              <div
+                class="absolute bg-white flex justify-center items-center w-9 h-9 top-2 right-2 rounded-full"
+              >
+                <!-- The fill:#E04124  and the stroke:#E04124 color wishlist -->
+                <svg
+                  class="inline-block"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.5166 17.3416C10.2333 17.4416 9.76663 17.4416 9.48329 17.3416C7.06663 16.5166 1.66663 13.075 1.66663 7.24165C1.66663 4.66665 3.74163 2.58331 6.29996 2.58331C7.81663 2.58331 9.15829 3.31665 9.99996 4.44998C10.8416 3.31665 12.1916 2.58331 13.7 2.58331C16.2583 2.58331 18.3333 4.66665 18.3333 7.24165C18.3333 13.075 12.9333 16.5166 10.5166 17.3416Z"
+                    stroke="#0B0F0E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img class="p-0 m-0" src="./images/cloth.png" alt="Product" />
+            </div>
+            <div class="lg:pt-4 pt-3 bg-white w-full">
+              <div class="flex">
+                <h3
+                  class="flex-1 text-black-tint text-sm w-[6.5625rem] lg:w-auto whitespace-nowrap overflow-hidden text-ellipsis lg:text-xl font-semibold mr-8"
+                >
+                  Spy x Family Tshirt
+                </h3>
+                <span
+                  class="inline-block text-green-02 text-sm lg:text-xl font-semibold text-right"
+                  >$28</span
+                >
+              </div>
+              <div
+                class="text-grey-01 lg:text-base text-xs font-normal lg:pt-1 pb-2"
+              >
+                North Purwokerto
+              </div>
+              <div class="flex items-center">
+                <span class="flex items-center gap-x-2 mr-5">
+                  <svg
+                    class="inline-block"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.7299 3.51014L15.4899 7.03014C15.7299 7.52014 16.3699 7.99014 16.9099 8.08014L20.0999 8.61014C22.1399 8.95014 22.6199 10.4301 21.1499 11.8901L18.6699 14.3701C18.2499 14.7901 18.0199 15.6001 18.1499 16.1801L18.8599 19.2501C19.4199 21.6801 18.1299 22.6201 15.9799 21.3501L12.9899 19.5801C12.4499 19.2601 11.5599 19.2601 11.0099 19.5801L8.01991 21.3501C5.87991 22.6201 4.57991 21.6701 5.13991 19.2501L5.84991 16.1801C5.97991 15.6001 5.74991 14.7901 5.32991 14.3701L2.84991 11.8901C1.38991 10.4301 1.85991 8.95014 3.89991 8.61014L7.08991 8.08014C7.61991 7.99014 8.25991 7.52014 8.49991 7.03014L10.2599 3.51014C11.2199 1.60014 12.7799 1.60014 13.7299 3.51014Z"
+                      fill="#FFA439"
+                    />
+                  </svg>
+                  <span
+                    class="inline-block font-normal text-xs lg:text-base text-black-tint"
+                    >4.8</span
+                  >
+                </span>
+                <div
+                  class="inline-block font-normal text-xs lg:text-base text-black-tint"
+                >
+                  1,238 Sold
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-lg overflow-hidden">
+            <div class="p-[3.125rem] bg-grey-04 rounded-lg relative isolate">
+              <div
+                class="absolute bg-white flex justify-center items-center w-9 h-9 top-2 right-2 rounded-full"
+              >
+                <!-- The fill:#E04124  and the stroke:#E04124 color wishlist -->
+                <svg
+                  class="inline-block"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.5166 17.3416C10.2333 17.4416 9.76663 17.4416 9.48329 17.3416C7.06663 16.5166 1.66663 13.075 1.66663 7.24165C1.66663 4.66665 3.74163 2.58331 6.29996 2.58331C7.81663 2.58331 9.15829 3.31665 9.99996 4.44998C10.8416 3.31665 12.1916 2.58331 13.7 2.58331C16.2583 2.58331 18.3333 4.66665 18.3333 7.24165C18.3333 13.075 12.9333 16.5166 10.5166 17.3416Z"
+                    stroke="#0B0F0E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img class="p-0 m-0" src="./images/cloth.png" alt="Product" />
+            </div>
+            <div class="lg:pt-4 pt-3 bg-white w-full">
+              <div class="flex">
+                <h3
+                  class="flex-1 text-black-tint text-sm w-[6.5625rem] lg:w-auto whitespace-nowrap overflow-hidden text-ellipsis lg:text-xl font-semibold mr-8"
+                >
+                  Spy x Family Tshirt
+                </h3>
+                <span
+                  class="inline-block text-green-02 text-sm lg:text-xl font-semibold text-right"
+                  >$28</span
+                >
+              </div>
+              <div
+                class="text-grey-01 lg:text-base text-xs font-normal lg:pt-1 pb-2"
+              >
+                North Purwokerto
+              </div>
+              <div class="flex items-center">
+                <span class="flex items-center gap-x-2 mr-5">
+                  <svg
+                    class="inline-block"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.7299 3.51014L15.4899 7.03014C15.7299 7.52014 16.3699 7.99014 16.9099 8.08014L20.0999 8.61014C22.1399 8.95014 22.6199 10.4301 21.1499 11.8901L18.6699 14.3701C18.2499 14.7901 18.0199 15.6001 18.1499 16.1801L18.8599 19.2501C19.4199 21.6801 18.1299 22.6201 15.9799 21.3501L12.9899 19.5801C12.4499 19.2601 11.5599 19.2601 11.0099 19.5801L8.01991 21.3501C5.87991 22.6201 4.57991 21.6701 5.13991 19.2501L5.84991 16.1801C5.97991 15.6001 5.74991 14.7901 5.32991 14.3701L2.84991 11.8901C1.38991 10.4301 1.85991 8.95014 3.89991 8.61014L7.08991 8.08014C7.61991 7.99014 8.25991 7.52014 8.49991 7.03014L10.2599 3.51014C11.2199 1.60014 12.7799 1.60014 13.7299 3.51014Z"
+                      fill="#FFA439"
+                    />
+                  </svg>
+                  <span
+                    class="inline-block font-normal text-xs lg:text-base text-black-tint"
+                    >4.8</span
+                  >
+                </span>
+                <div
+                  class="inline-block font-normal text-xs lg:text-base text-black-tint"
+                >
+                  1,238 Sold
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-lg overflow-hidden">
+            <div class="p-[3.125rem] bg-grey-04 rounded-lg relative isolate">
+              <div
+                class="absolute bg-white flex justify-center items-center w-9 h-9 top-2 right-2 rounded-full"
+              >
+                <!-- The fill:#E04124  and the stroke:#E04124 color wishlist -->
+                <svg
+                  class="inline-block"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.5166 17.3416C10.2333 17.4416 9.76663 17.4416 9.48329 17.3416C7.06663 16.5166 1.66663 13.075 1.66663 7.24165C1.66663 4.66665 3.74163 2.58331 6.29996 2.58331C7.81663 2.58331 9.15829 3.31665 9.99996 4.44998C10.8416 3.31665 12.1916 2.58331 13.7 2.58331C16.2583 2.58331 18.3333 4.66665 18.3333 7.24165C18.3333 13.075 12.9333 16.5166 10.5166 17.3416Z"
+                    stroke="#0B0F0E"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img class="p-0 m-0" src="./images/cloth.png" alt="Product" />
+            </div>
+            <div class="lg:pt-4 pt-3 bg-white w-full">
+              <div class="flex">
+                <h3
+                  class="flex-1 text-black-tint text-sm w-[6.5625rem] lg:w-auto whitespace-nowrap overflow-hidden text-ellipsis lg:text-xl font-semibold mr-8"
+                >
+                  Spy x Family Tshirt
+                </h3>
+                <span
+                  class="inline-block text-green-02 text-sm lg:text-xl font-semibold text-right"
+                  >$28</span
+                >
+              </div>
+              <div
+                class="text-grey-01 lg:text-base text-xs font-normal lg:pt-1 pb-2"
+              >
+                North Purwokerto
+              </div>
+              <div class="flex items-center">
+                <span class="flex items-center gap-x-2 mr-5">
+                  <svg
+                    class="inline-block"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.7299 3.51014L15.4899 7.03014C15.7299 7.52014 16.3699 7.99014 16.9099 8.08014L20.0999 8.61014C22.1399 8.95014 22.6199 10.4301 21.1499 11.8901L18.6699 14.3701C18.2499 14.7901 18.0199 15.6001 18.1499 16.1801L18.8599 19.2501C19.4199 21.6801 18.1299 22.6201 15.9799 21.3501L12.9899 19.5801C12.4499 19.2601 11.5599 19.2601 11.0099 19.5801L8.01991 21.3501C5.87991 22.6201 4.57991 21.6701 5.13991 19.2501L5.84991 16.1801C5.97991 15.6001 5.74991 14.7901 5.32991 14.3701L2.84991 11.8901C1.38991 10.4301 1.85991 8.95014 3.89991 8.61014L7.08991 8.08014C7.61991 7.99014 8.25991 7.52014 8.49991 7.03014L10.2599 3.51014C11.2199 1.60014 12.7799 1.60014 13.7299 3.51014Z"
+                      fill="#FFA439"
+                    />
+                  </svg>
+                  <span
+                    class="inline-block font-normal text-xs lg:text-base text-black-tint"
+                    >4.8</span
+                  >
+                </span>
+                <div
+                  class="inline-block font-normal text-xs lg:text-base text-black-tint"
+                >
+                  1,238 Sold
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <footer class="px-6 bg-grey-03 py-10">
+      <a class="block mb-4" href="#"
+        ><img src="./images/Logo.svg" alt="Lenny Brand Logo"
+      /></a>
+      <p class="text-sm text-black-tint font-normal leading-[1.6] mb-8">
+        The biggest marketplace managed by Ideologist corp, which provides
+        various kinds of daily needs and hobbies.
+      </p>
+      <div class="grid grid-cols-2 grid-rows-1 gap-y-11">
+        <div>
+          <h4 class="text-base font-semibold text-black-tint pb-4">
+            About Lenny
+          </h4>
+          <ul class="space-y-3">
+            <li class="text-black-tint text-sm">
+              <a href="">Information</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Store Lactor</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Bulk Purchase</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Altercation Service</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Gift Delivery Service</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Live Station</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-base font-semibold text-black-tint pb-4">
+            About Lenny
+          </h4>
+          <ul class="space-y-3">
+            <li class="text-black-tint text-sm"><a href="">FAQ</a></li>
+            <li class="text-black-tint text-sm">
+              <a href="">Return Policy</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Privacy Policy</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Accessibility</a>
+            </li>
+            <li class="text-black-tint text-sm"><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-base font-semibold text-black-tint pb-4">Account</h4>
+          <ul class="space-y-3">
+            <li class="text-black-tint text-sm">
+              <a href="">Membership</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Address</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Coupons</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-base font-semibold text-black-tint pb-4">
+            Contact Us
+          </h4>
+          <ul class="space-y-3">
+            <li class="text-black-tint text-sm">
+              <a href="">For Lenny Consumer Complaint Services</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">(684) 555-0102 and curtis.weaver@example.com</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Customers Complaint Service</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Directorate Generate of the Republic of Nigeria</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">(480) 555-0103</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="px-6 py-4 bg-[#F1F1F1]">
+      <h3 class="capitalize text-sm text-black-tint mb-3 text-center">
+        COPYRIGHT © LENNY CO., LTD. ALL RIGHTS RESERVED.
+      </h3>
+      <div class="flex justify-center items-center gap-x-4">
+        <p>Terms of Use</p>
+        <p>Privacy Policy</p>
+      </div>
+    </div>
     <script type="module" src="main.js"></script>
   </body>
 </html>

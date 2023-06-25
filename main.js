@@ -1,3 +1,4 @@
+'use strict';
 import './style.css';
 
 // const password = document.getElementById('input-password');
@@ -138,79 +139,161 @@ const url = window.location.href;
 
 // console.log(filteredSplit);
 
-const selectButton = document.getElementById('select-menu_button');
-const selectName = document.querySelectorAll('.select-name');
-const selectMenu = document.querySelector('.selectMenu');
-console.log(selectName);
+// const selectButton = document.getElementById('select-menu_button');
+// const selectName = document.querySelectorAll('.select-name');
+// const selectMenu = document.querySelector('.selectMenu');
+// console.log(selectName);
 
-const fillHTML = function (element) {
-  const selectHtml = `<span class="block truncate">${element.textContent}</span>
-<span
-  class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2"
->
-  <svg
-    class="h-5 w-5 text-gray-400"
-    viewBox="0 0 20 20"
-    fill="currentColor"
-    aria-hidden="true"
-  >
-    <path
-      fill-rule="evenodd"
-      d="M10 3a.75.75 0 01.55.24l3.25 3.5a.75.75 0 11-1.1 1.02L10 4.852 7.3 7.76a.75.75 0 01-1.1-1.02l3.25-3.5A.75.75 0 0110 3zm-3.76 9.2a.75.75 0 011.06.04l2.7 2.908 2.7-2.908a.75.75 0 111.1 1.02l-3.25 3.5a.75.75 0 01-1.1 0l-3.25-3.5a.75.75 0 01.04-1.06z"
-      clip-rule="evenodd"
-    />
-  </svg>
-</span>`;
+// const fillHTML = function (element) {
+//   const selectHtml = `<span class="block truncate">${element.textContent}</span>
+// <span
+//   class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2"
+// >
+//   <svg
+//     class="h-5 w-5 text-gray-400"
+//     viewBox="0 0 20 20"
+//     fill="currentColor"
+//     aria-hidden="true"
+//   >
+//     <path
+//       fill-rule="evenodd"
+//       d="M10 3a.75.75 0 01.55.24l3.25 3.5a.75.75 0 11-1.1 1.02L10 4.852 7.3 7.76a.75.75 0 01-1.1-1.02l3.25-3.5A.75.75 0 0110 3zm-3.76 9.2a.75.75 0 011.06.04l2.7 2.908 2.7-2.908a.75.75 0 111.1 1.02l-3.25 3.5a.75.75 0 01-1.1 0l-3.25-3.5a.75.75 0 01.04-1.06z"
+//       clip-rule="evenodd"
+//     />
+//   </svg>
+// </span>`;
 
-  return selectHtml;
-};
+//   return selectHtml;
+// };
 
-selectMenu.addEventListener('click', function (e) {
-  const clicked = e.target.closest('.select-name');
-  console.log(clicked);
+// selectMenu.addEventListener('click', function (e) {
+//   const clicked = e.target.closest('.select-name');
+//   console.log(clicked);
 
-  // Guard Clause
-  if (!clicked) return;
+//   // Guard Clause
+//   if (!clicked) return;
 
-  const child = clicked.firstElementChild;
-  console.log(child);
-  selectButton.innerHTML = fillHTML(child);
+//   const child = clicked.firstElementChild;
+//   console.log(child);
+//   selectButton.innerHTML = fillHTML(child);
 
-  const children = selectMenu.children;
-  console.log(children);
-});
+//   const children = selectMenu.children;
+//   console.log(children);
+// });
 
-const triggerSelectMenuAnimation = function () {
-  console.log('Button');
-};
+// const triggerSelectMenuAnimation = function () {
+//   console.log('Button');
+// };
 
-let state = true
+// let state = true
 
-selectButton.addEventListener('click', function (e) {
-  if (state) {
-    selectMenu.classList.remove('opacity-0', 'transition', 'ease-in',  'duration-100')
-    selectMenu.classList.add('opacity-100')
-    state = !state
-  } else {
-    selectMenu.classList.remove('opacity-100')
-    selectMenu.classList.add('opacity-0', 'transition', 'ease-in',  'duration-100')
-    state = !state
+// selectButton.addEventListener('click', function (e) {
+//   if (state) {
+//     selectMenu.classList.remove('opacity-0', 'transition', 'ease-in',  'duration-100')
+//     selectMenu.classList.add('opacity-100')
+//     state = !state
+//   } else {
+//     selectMenu.classList.remove('opacity-100')
+//     selectMenu.classList.add('opacity-0', 'transition', 'ease-in',  'duration-100')
+//     state = !state
+//   }
+//   console.log('Button');
+// });
+
+// const ratings = 4.3
+
+// const calculateRating = function (rating) {
+//   const ratingPercentage = rating * 72
+//   return ratingPercentage + 'deg'
+// }
+// const root = document.documentElement;
+
+// root.style.setProperty('--progress', calculateRating(ratings));
+
+// const circleText = document.querySelector('.circle-text')
+
+// circleText.textContent = ratings
+// const colorList = ['red', 'green', 'blue', 'gray', 'yellow']
+
+// const randomColor = function(colorArr) {
+//   const totalColorList = colorArr.length - 1
+
+// }
+
+// const randomNumber = function() {
+
+// }
+
+// randomColor(colorList)
+
+// document.querySelector('#ola').addEventListener('click', e => {
+//   const target = e.currentTarget;
+//   target.classList.add(`bg-red-${randomNumber()}00`);
+//   target.classList.remove('bg-black');
+//   console.log(target);
+// });
+
+// document.querySelector('#tobi').addEventListener('click', (e) => {
+//   e.stopPropagation()
+//   const target = e.currentTarget
+//   target.classList.add('bg-blue-700')
+//   target.classList.remove('bg-green')
+//   console.log(target);
+// })
+
+// let event, target
+// document.querySelector('#tobi').addEventListener('click', e => {
+//   event = e;
+//   console.log(event);
+//   target = event.currentTarget;
+
+//   handlePropagation({
+//     classNameAdded: 'bg-blue-700',
+//     classNameRemoved: 'bg-green',
+//   });
+// });
+
+// document.querySelector('body').addEventListener('click', e => {
+//   const target = e.currentTarget;
+//   target.classList.add('opacity-0');
+// });
+
+// document.querySelector('#element').addEventListener();
+
+// const handlePropagation = function ({
+//   classNameAdded: classNameAdded,
+//   classNameRemoved: classNameRemoved,
+// }) {
+//   event.stopPropagation();
+//   target.classList.add(classNameAdded);
+//   target.classList.remove(classNameRemoved);
+//   console.log(target);
+// };
+
+document.querySelector('.minus').addEventListener('click', e => {
+  const target = e.currentTarget;
+  const parent = target.parentElement;
+  const input = parent.querySelector('input');
+  const inputValue = input.value;
+  const inputValueNumber = Number(inputValue);
+  if (inputValueNumber === 1) {
+    alert('The minimum order is 1');
+    return;
   }
-  console.log('Button');
+  const newInputValue = inputValueNumber - 1;
+  input.value = newInputValue;
 });
 
-
-const ratings = 4.3
-
-const calculateRating = function (rating) {
-  const ratingPercentage = rating * 72
-  return ratingPercentage + 'deg'
-}
-const root = document.documentElement;
-
-root.style.setProperty('--progress', calculateRating(ratings));
-
-
-const circleText = document.querySelector('.circle-text')
-
-circleText.textContent = ratings
+document.querySelector('.plus').addEventListener('click', e => {
+  const target = e.currentTarget;
+  const parent = target.parentElement;
+  const input = parent.querySelector('input');
+  const inputValue = input.value;
+  const inputValueNumber = Number(inputValue);
+  if (inputValueNumber >= 25) {
+    alert('You can only order 25 items');
+    return;
+  }
+  const newInputValue = inputValueNumber + 1;
+  input.value = newInputValue;
+});
