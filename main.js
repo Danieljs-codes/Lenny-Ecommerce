@@ -297,3 +297,64 @@ document.querySelector('.plus').addEventListener('click', e => {
   const newInputValue = inputValueNumber + 1;
   input.value = newInputValue;
 });
+
+
+// Supabase edge function that listens to stripe webhook events and stores them in the database if the payment is successful
+export const handler = async (event, context) => {
+  const { data } = JSON.parse(event.body);
+  const { type } = data.object;
+
+  if (type === 'checkout.session.completed') {
+    const { id, customer, amount_total } = data.object;
+    const { email } = customer;
+
+    const { data: user } = await supabase
+      .from('users')
+      .select('id')
+      .eq('email', email)
+      .single();
+
+
+    await supabase
+      .from('orders')
+      .insert([
+        {
+          user_id: user.id,
+          stripe_id: id,
+          amount: amount_total,
+        },
+      ]);
+
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ received: true }),
+    };
+  }
+}
+
+
+// How do i implement a signup or signin modal that is available on every page of the website
+// How do i implement a cart modal that is available on every page of the website
+// How do i implement a search modal that is available on every page of the website
+// How do i implement a profile modal that is available on every page of the website
+// How do i implement a checkout modal that is available on every page of the website
+// How do i implement a product modal that is available on every page of the website
+
+// Edge functions that listens to upload on Supabase storage if a user uploads a profile picture it gets the url and updates that particular user's profile picture column with the url
+export const handler = async (event, context) => {
+  const { data } = JSON.parse(event.body);
+  const { id, user_id, file: { url } } = data;
+
+  await supabase
+    .from('users')
+    .update({ profile_picture: url })
+    .eq('id', user_id);
+
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ received: true }),
+  };
+}
+
+// When a user is uploading a profile picture how can i know the userID of the user that is uploading the profile picture I am using Supabase Auth and Supabase Storage
+

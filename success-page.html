@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@1&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lenny - Ecommerce</title>
+  </head>
+  <body class="relative isolate overflow-x-hidden font-grotesk">
+    <nav class="flex items-center px-6 py-4 bg-white border border-grey-02">
+      <!--Logo-->
+      <div class="hidden md:block mr-9">
+        <a href="#"><img src="./images/Logo.svg" alt="" /></a>
+      </div>
+      <!--Search-->
+      <div class="flex flex-1">
+        <div
+          class="w-full rounded-xl border-0 py-3 px-2 md:px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-[#818B9C] focus:ring-2 focus:ring-inset focus:ring-green placeholder:text-sm sm:text-sm sm:leading-6 placeholder:font-normal bg-[#F6F8FA] flex h-11"
+        >
+          <select
+            id="drop-down"
+            name="drop-down"
+            autocomplete="off"
+            class="h-full rounded-md border-0 bg-transparent py-0 pl-3 pr-7 text-black-tint focus:outline-none focus:ring-2 focus:ring-inset text-xs font-medium focus:ring-indigo-600 sm:text-sm hidden md:block"
+          >
+            <option>US</option>
+            <option>CA</option>
+            <option>EU</option>
+          </select>
+          <span
+            class="w-[1px] hidden md:inline-block h-full bg-grey-02 ml-5 mr-4"
+          ></span>
+          <div class="flex items-center flex-1">
+            <div class="flex-1">
+              <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Search on lenny..."
+                class="w-full bg-transparent outline-0 outline-transparent border-0 border-transparent focus:ring-0 focus:border-transparent placeholder:text-xs placeholder:text-grey-01 text-sm font-medium text-grey-01 px-2 py-3"
+              />
+            </div>
+            <button>
+              <div>
+                <svg
+                  class="inline-block"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                    stroke="#C4C8CC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22 22L20 20"
+                    stroke="#C4C8CC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Search End -->
+      <!--Icons-->
+      <div class="icons ml-4 lg:ml-12 flex gap-x-4">
+        <button>
+          <img src="./images/shopping-cart.svg" alt="Shopping Cart Icon" />
+        </button>
+        <button class="relative isolate">
+          <img src="./images/notification.svg" alt="" />
+          <span
+            class="rounded-full bg-danger absolute text-white text-[9px] font-medium h-[1.125rem] w-[1.125rem] flex justify-center items-center -right-2 -top-2 md:top-1 border-[1.5px] border-white"
+            >6</span
+          >
+        </button>
+        <button class="relative isolate">
+          <img src="./images/sms.svg" alt="" />
+          <span
+            class="rounded-full bg-danger absolute text-white text-[9px] font-medium h-[1.125rem] w-[1.125rem] flex justify-center items-center -right-2 -top-2 md:top-1 border-[1.5px] border-white"
+            >6</span
+          >
+        </button>
+        <span class="bg-grey-02 w-[1px] inline-block"></span>
+        <button class="md:hidden">
+          <img src="./images/menu.svg" alt="" />
+        </button>
+        <button class="hidden md:block">
+          <div class="w-12 h-12">
+            <img
+              class="bg-cover bg-no-repeat bg-center"
+              src="./images/defaultPfp.svg"
+              alt="Profile Picture"
+            />
+          </div>
+        </button>
+      </div>
+      <!--End of Icons-->
+      <div class="account"></div>
+    </nav>
+    <section class="px-6">
+      <div class="flex justify-center items-center flex-col">
+        <div class="mb-4 pt-[3.75rem]">
+          <svg
+            width="138"
+            height="138"
+            viewBox="0 0 138 138"
+            fill="none"
+            class="w-[5.25rem] h-[5.25rem]"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.1"
+              d="M68.998 126.5C100.754 126.5 126.498 100.756 126.498 68.9998C126.498 37.2434 100.754 11.4998 68.998 11.4998C37.2417 11.4998 11.498 37.2434 11.498 68.9998C11.498 100.756 37.2417 126.5 68.998 126.5Z"
+              fill="#1D9E34"
+            />
+            <path
+              d="M60.8382 89.5846C59.6882 89.5846 58.5957 89.1246 57.7907 88.3196L41.5182 72.0471C39.8507 70.3796 39.8507 67.6196 41.5182 65.9521C43.1857 64.2846 45.9457 64.2846 47.6132 65.9521L60.8382 79.1771L90.3932 49.6221C92.0607 47.9546 94.8207 47.9546 96.4882 49.6221C98.1557 51.2896 98.1557 54.0496 96.4882 55.7171L63.8857 88.3196C63.0807 89.1246 61.9882 89.5846 60.8382 89.5846Z"
+              fill="#1D9E34"
+            />
+          </svg>
+        </div>
+        <h2 class="font-semibold text-lg text-center">
+          Your Payment is Successful
+        </h2>
+        <p class="text-grey-01 text-sm leading-[160%] text-center mt-3">
+          Your payment will be proceed in 30 mins. If any problem please chat to
+          customer service. Detail information will included below.
+        </p>
+      </div>
+      <div class="flex flex-col text-center font-semibold gap-y-4 mt-8">
+        <a class="text-white bg-green py-3 block rounded-lg" href="">Back to Home</a>
+        <a class="text-black-tint bg-grey-02 py-3 block rounded-lg" href="">Check Detail</a>
+      </div>
+    </section>
+    <footer class="px-6 bg-grey-03 py-10">
+      <a class="block mb-4" href="#"
+        ><img src="./images/Logo.svg" alt="Lenny Brand Logo"
+      /></a>
+      <p class="text-sm text-black-tint font-normal leading-[1.6] mb-8">
+        The biggest marketplace managed by Ideologist corp, which provides
+        various kinds of daily needs and hobbies.
+      </p>
+      <div class="grid grid-cols-2 grid-rows-1 gap-y-11">
+        <div>
+          <h4 class="text-base font-semibold text-black-tint pb-4">
+            About Lenny
+          </h4>
+          <ul class="space-y-3">
+            <li class="text-black-tint text-sm">
+              <a href="">Information</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Store Lactor</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Bulk Purchase</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Altercation Service</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Gift Delivery Service</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Live Station</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-base font-semibold text-black-tint pb-4">
+            About Lenny
+          </h4>
+          <ul class="space-y-3">
+            <li class="text-black-tint text-sm"><a href="">FAQ</a></li>
+            <li class="text-black-tint text-sm">
+              <a href="">Return Policy</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Privacy Policy</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Accessibility</a>
+            </li>
+            <li class="text-black-tint text-sm"><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-base font-semibold text-black-tint pb-4">Account</h4>
+          <ul class="space-y-3">
+            <li class="text-black-tint text-sm">
+              <a href="">Membership</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Address</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Coupons</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-base font-semibold text-black-tint pb-4">
+            Contact Us
+          </h4>
+          <ul class="space-y-3">
+            <li class="text-black-tint text-sm">
+              <a href="">For Lenny Consumer Complaint Services</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">(684) 555-0102 and curtis.weaver@example.com</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Customers Complaint Service</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Directorate Generate of the Republic of Nigeria</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">(480) 555-0103</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="px-6 py-4 bg-[#F1F1F1]">
+      <h3 class="capitalize text-sm text-black-tint mb-3 text-center">
+        COPYRIGHT © LENNY CO., LTD. ALL RIGHTS RESERVED.
+      </h3>
+      <div class="flex justify-center items-center gap-x-4">
+        <p>Terms of Use</p>
+        <p>Privacy Policy</p>
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

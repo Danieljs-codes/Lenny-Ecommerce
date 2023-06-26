@@ -1,2 +1,594 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@1&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lenny - Ecommerce</title>
+  </head>
+  <body class="relative font-grotesk text-black-tint isolate">
+    <nav class="flex items-center px-6 py-4 bg-white border border-grey-02">
+      <!--Logo-->
+      <div class="hidden md:block mr-9">
+        <a href="#"><img src="./images/Logo.svg" alt="" /></a>
+      </div>
+      <!--Search-->
+      <div class="flex flex-1">
+        <div
+          class="w-full rounded-xl border-0 py-3 px-2 md:px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-[#818B9C] focus:ring-2 focus:ring-inset focus:ring-green placeholder:text-sm sm:text-sm sm:leading-6 placeholder:font-normal bg-[#F6F8FA] flex h-11"
+        >
+          <select
+            id="drop-down"
+            name="drop-down"
+            autocomplete="off"
+            class="h-full rounded-md border-0 bg-transparent py-0 pl-3 pr-7 text-black-tint focus:outline-none focus:ring-2 focus:ring-inset text-xs font-medium focus:ring-indigo-600 sm:text-sm hidden md:block"
+          >
+            <option>US</option>
+            <option>CA</option>
+            <option>EU</option>
+          </select>
+          <span
+            class="w-[1px] hidden md:inline-block h-full bg-grey-02 ml-5 mr-4"
+          ></span>
+          <div class="flex items-center flex-1">
+            <div class="flex-1">
+              <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Search on lenny..."
+                class="w-full bg-transparent outline-0 outline-transparent border-0 border-transparent focus:ring-0 focus:border-transparent placeholder:text-xs placeholder:text-grey-01 text-sm font-medium text-grey-01 px-2 py-3"
+              />
+            </div>
+            <button>
+              <div>
+                <svg
+                  class="inline-block"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                    stroke="#C4C8CC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22 22L20 20"
+                    stroke="#C4C8CC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Search End -->
+      <!--Icons-->
+      <div class="icons ml-4 lg:ml-12 flex gap-x-4">
+        <button>
+          <img src="./images/shopping-cart.svg" alt="Shopping Cart Icon" />
+        </button>
+        <button class="relative isolate">
+          <img src="./images/notification.svg" alt="" />
+          <span
+            class="rounded-full bg-danger absolute text-white text-[9px] font-medium h-[1.125rem] w-[1.125rem] flex justify-center items-center -right-2 -top-2 md:top-1 border-[1.5px] border-white"
+            >6</span
+          >
+        </button>
+        <button class="relative isolate">
+          <img src="./images/sms.svg" alt="" />
+          <span
+            class="rounded-full bg-danger absolute text-white text-[9px] font-medium h-[1.125rem] w-[1.125rem] flex justify-center items-center -right-2 -top-2 md:top-1 border-[1.5px] border-white"
+            >6</span
+          >
+        </button>
+        <span class="bg-grey-02 w-[1px] inline-block"></span>
+        <button class="md:hidden">
+          <img src="./images/menu.svg" alt="" />
+        </button>
+        <button class="hidden md:block">
+          <div class="w-12 h-12">
+            <img
+              class="bg-cover bg-no-repeat bg-center"
+              src="./images/defaultPfp.svg"
+              alt="Profile Picture"
+            />
+          </div>
+        </button>
+      </div>
+      <!--End of Icons-->
+      <div class="account"></div>
+    </nav>
+    <!--End of Navbar-->
+    <div
+      class="absolute w-full h-[21.25rem] top-0 left-0 -z-10 bg-grey-03"
+    ></div>
+    <section class="px-6">
+      <h2 class="text-lg font-semibold mt-8">Shopping Chart</h2>
+      <p class="text-grey-01 text-xs mt-0.5 mb-8">
+        Showing your choices product
+      </p>
+      <div class="border border-grey-02 rounded-xl p-4 bg-white">
+        <h3 class="text-base font-semibold mb-6">Shipping Address</h3>
+        <div>
+          <fieldset>
+            <legend class="sr-only">Checkout Methods or Options</legend>
+            <div class="-space-y-px rounded-md bg-white">
+              <!-- Checked: "z-10 border-indigo-200 bg-indigo-50", Not Checked: "border-gray-200" -->
+              <label
+                class="rounded-tl-md rounded-tr-md relative flex cursor-pointer border p-4 focus:outline-none items-center gap-x-4"
+              >
+                <input
+                  type="radio"
+                  name="payment method"
+                  value="Paypal Checkout"
+                  class="mt-0.5 h-4 w-4 shrink-0 cursor-pointer text-green border-gray-300 focus:ring-green"
+                  aria-labelledby="payment method-0-label"
+                  aria-describedby="payment method-0-description"
+                />
+                <div class="flex items-center">
+                  <img
+                    class="bg-grey-04 rounded-lg w-14 h-9"
+                    src="/images/paypal-logo.png"
+                    alt=""
+                  />
+                  <span class="ml-3 flex flex-col">
+                    <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
+                    <span
+                      id="payment method-0-label"
+                      class="block text-sm font-semibold"
+                      >Paypal</span
+                    >
+                    <!-- Checked: "text-indigo-700", Not Checked: "text-gray-500" -->
+                    <span
+                      id="payment method-0-description"
+                      class="block text-[.625rem] text-grey-01"
+                      >Central Jakarta</span
+                    >
+                  </span>
+                </div>
+              </label>
+              <!-- Checked: "z-10 border-indigo-200 bg-indigo-50", Not Checked: "border-gray-200" -->
+              <!-- Checked: "z-10 border-indigo-200 bg-indigo-50", Not Checked: "border-gray-200" -->
+              <label
+                class="relative flex cursor-pointer border p-4 focus:outline-none items-center gap-x-4"
+              >
+                <input
+                  type="radio"
+                  name="payment method"
+                  value="Paypal Checkout"
+                  class="mt-0.5 h-4 w-4 shrink-0 cursor-pointer text-green border-gray-300 focus:ring-green"
+                  aria-labelledby="payment method-0-label"
+                  aria-describedby="payment method-0-description"
+                />
+                <div class="flex items-center">
+                  <img
+                    class="bg-grey-04 rounded-lg w-14 h-9"
+                    src="/images/stripe-logo.png"
+                    alt=""
+                  />
+                  <span class="ml-3 flex flex-col">
+                    <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
+                    <span
+                      id="payment method-0-label"
+                      class="block text-sm font-semibold"
+                      >Stripe</span
+                    >
+                    <!-- Checked: "text-indigo-700", Not Checked: "text-gray-500" -->
+                    <span
+                      id="payment method-0-description"
+                      class="block text-[.625rem] text-grey-01"
+                      >8329 3288 823 ****</span
+                    >
+                  </span>
+                </div>
+              </label>
+              <!-- Checked: "z-10 border-indigo-200 bg-indigo-50", Not Checked: "border-gray-200" -->
+              <!-- Checked: "z-10 border-indigo-200 bg-indigo-50", Not Checked: "border-gray-200" -->
+              <label
+                class="rounded-bl-md rounded-br-md relative flex cursor-pointer border p-4 focus:outline-none items-center gap-x-4"
+              >
+                <input
+                  type="radio"
+                  name="payment method"
+                  value="Paypal Checkout"
+                  class="mt-0.5 h-4 w-4 shrink-0 cursor-pointer text-green border-gray-300 focus:ring-green"
+                  aria-labelledby="payment method-0-label"
+                  aria-describedby="payment method-0-description"
+                />
+                <div class="flex items-center">
+                  <img
+                    class="bg-grey-04 rounded-lg w-14 h-9"
+                    src="/images/payoneer-log.png"
+                    alt=""
+                  />
+                  <span class="ml-3 flex flex-col">
+                    <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
+                    <span
+                      id="payment method-0-label"
+                      class="block text-sm font-semibold"
+                      >Payoneer</span
+                    >
+                    <!-- Checked: "text-indigo-700", Not Checked: "text-gray-500" -->
+                    <span
+                      id="payment method-0-description"
+                      class="block text-[.625rem] text-grey-01"
+                      >8329 3288 823 ****</span
+                    >
+                  </span>
+                </div>
+              </label>
+              <!-- Checked: "z-10 border-indigo-200 bg-indigo-50", Not Checked: "border-gray-200" -->
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <!-- End of Payment Methods -->
+      <div class="border border-grey-02 rounded-xl p-4 bg-white mt-6">
+        <h3 class="text-base font-semibold mb-6">Shipping Address</h3>
+        <div class="flex flex-col gap-y-4">
+          <div>
+            <label
+              for="email"
+              class="block text-sm leading-6 font-medium text-gray-900"
+              >Holder Name</label
+            >
+            <div class="mt-1">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="block w-full rounded-xl border-0 py-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                placeholder="Enter your name"
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              for="email"
+              class="block text-sm leading-6 font-medium text-gray-900"
+              >Card Number</label
+            >
+            <div class="mt-1">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="block w-full rounded-xl border-0 py-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green sm:text-sm sm:leading-6"
+                placeholder="0000 - 0000 - 0000 - 0000"
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              for="account-number"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Expiry Date</label
+            >
+            <div class="relative mt-1 rounded-xl">
+              <input
+                type="text"
+                name="account-number"
+                id="account-number"
+                class="block w-full rounded-xl border-0 py-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green sm:text-sm sm:leading-6"
+                placeholder="Select Expiry Date"
+              />
+              <div
+                class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 2V5"
+                    stroke="#C4C8CC"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16 2V5"
+                    stroke="#C4C8CC"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3.5 9.08997H20.5"
+                    stroke="#C4C8CC"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z"
+                    stroke="#C4C8CC"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11.9945 13.7H12.0035"
+                    stroke="#C4C8CC"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.29529 13.7H8.30427"
+                    stroke="#C4C8CC"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.29529 16.7H8.30427"
+                    stroke="#C4C8CC"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div>
+            <label
+              for="email"
+              class="block text-sm leading-6 font-medium text-gray-900"
+              >CVV</label
+            >
+            <div class="mt-1">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="block w-full rounded-xl border-0 py-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                placeholder="Enter your cvv"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-8 flex flex-col font-semibold gap-y-4">
+          <a
+            class="py-[.875rem] block bg-green font-semibold text-white text-center rounded-lg"
+            href=""
+            >Add New</a
+          >
+          <a
+            class="py-[.875rem] block bg-grey-02 text-black-tint rounded-lg"
+            href=""
+            >Discard</a
+          >
+        </div>
+      </div>
+      <div>
+        <div
+          class="py-6 md:px-6 md:border md:rounded-xl md:border-grey-02 text-black-tint"
+        >
+          <h2
+            class="font-semibold text-base tracking-[-0.0125rem] mb-6 capitalize"
+          >
+            Product Summary
+          </h2>
+          <p class="capitalize text-sm">No product Selected</p>
+          <div class="my-6 h-[1px] bg-grey-02"></div>
+          <div class="flex flex-col gap-y-3">
+            <div class="flex text-grey-01 text-sm items-center">
+              <p class="flex-1">Total Price</p>
+              <p class="">$280</p>
+            </div>
+            <div class="flex text-grey-01 text-sm items-center">
+              <p class="flex-1">Total Price (Discount)</p>
+              <p class="">$98</p>
+            </div>
+            <div class="flex text-grey-01 text-sm items-center">
+              <p class="flex-1">Tax & Fee</p>
+              <p class="">$46</p>
+            </div>
+          </div>
+          <div class="my-6 h-[1px] bg-grey-02"></div>
+          <div
+            class="flex text-black-tint text-base tracking-[-0.0125rem] items-center font-semibold mb-6"
+          >
+            <p class="flex-1">Total Price</p>
+            <p class="">$385</p>
+          </div>
+          <div
+            class="rounded-xl border border-grey-02 text-black-tint text-sm flex items-center p-3"
+          >
+            <div class="flex-1">
+              <div class="flex gap-x-3 items-center">
+                <div>
+                  <svg
+                    width="20"
+                    height="21"
+                    viewBox="0 0 20 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.32408 12.717L2.05742 11.4504C1.54076 10.9337 1.54076 10.0837 2.05742 9.56701L3.32408 8.30033C3.54075 8.08366 3.71575 7.65866 3.71575 7.35866V5.56697C3.71575 4.83364 4.31575 4.23366 5.04909 4.23366H6.84075C7.14075 4.23366 7.56575 4.05869 7.78242 3.84202L9.04908 2.57534C9.56574 2.05867 10.4158 2.05867 10.9324 2.57534L12.1991 3.84202C12.4158 4.05869 12.8407 4.23366 13.1407 4.23366H14.9324C15.6658 4.23366 16.2657 4.83364 16.2657 5.56697V7.35866C16.2657 7.65866 16.4407 8.08366 16.6574 8.30033L17.9241 9.56701C18.4408 10.0837 18.4408 10.9337 17.9241 11.4504L16.6574 12.717C16.4407 12.9337 16.2657 13.3587 16.2657 13.6587V15.4503C16.2657 16.1836 15.6658 16.7837 14.9324 16.7837H13.1407C12.8407 16.7837 12.4158 16.9587 12.1991 17.1754L10.9324 18.442C10.4158 18.9587 9.56574 18.9587 9.04908 18.442L7.78242 17.1754C7.56575 16.9587 7.14075 16.7837 6.84075 16.7837H5.04909C4.31575 16.7837 3.71575 16.1836 3.71575 15.4503V13.6587C3.71575 13.3504 3.54075 12.9254 3.32408 12.717Z"
+                      stroke="#1D9E34"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.5 13L12.5 8"
+                      stroke="#1D9E34"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.0791 12.5833H12.0866"
+                      stroke="#1D9E34"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.91209 8.41667H7.91957"
+                      stroke="#1D9E34"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-sm mb-0.5">Promo applied</p>
+                  <p class="text-grey-01 text-xs">1x shipping discount used</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.94043 13.28L10.2871 8.93333C10.8004 8.42 10.8004 7.58 10.2871 7.06667L5.94043 2.72"
+                  stroke="#0B0F0E"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="bg-green block py-4 text-center text-white rounded-lg mt-10 font-semibold px-4"
+            href="/checkout"
+            >Checkout</a
+          >
+        </div>
+      </div>
+    </section>
+    <footer class="px-6 bg-grey-03 py-10">
+      <a class="block mb-4" href="#"
+        ><img src="./images/Logo.svg" alt="Lenny Brand Logo"
+      /></a>
+      <p class="text-sm text-black-tint font-normal leading-[1.6] mb-8">
+        The biggest marketplace managed by Ideologist corp, which provides
+        various kinds of daily needs and hobbies.
+      </p>
+      <div class="grid grid-cols-2 grid-rows-1 gap-y-11">
+        <div>
+          <h4 class="text-base font-semibold text-black-tint pb-4">
+            About Lenny
+          </h4>
+          <ul class="space-y-3">
+            <li class="text-black-tint text-sm">
+              <a href="">Information</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Store Lactor</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Bulk Purchase</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Altercation Service</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Gift Delivery Service</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Live Station</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-base font-semibold text-black-tint pb-4">
+            About Lenny
+          </h4>
+          <ul class="space-y-3">
+            <li class="text-black-tint text-sm"><a href="">FAQ</a></li>
+            <li class="text-black-tint text-sm">
+              <a href="">Return Policy</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Privacy Policy</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Accessibility</a>
+            </li>
+            <li class="text-black-tint text-sm"><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-base font-semibold text-black-tint pb-4">Account</h4>
+          <ul class="space-y-3">
+            <li class="text-black-tint text-sm">
+              <a href="">Membership</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Address</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Coupons</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-base font-semibold text-black-tint pb-4">
+            Contact Us
+          </h4>
+          <ul class="space-y-3">
+            <li class="text-black-tint text-sm">
+              <a href="">For Lenny Consumer Complaint Services</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">(684) 555-0102 and curtis.weaver@example.com</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Customers Complaint Service</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">Directorate Generate of the Republic of Nigeria</a>
+            </li>
+            <li class="text-black-tint text-sm">
+              <a href="">(480) 555-0103</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="px-6 py-4 bg-[#F1F1F1]">
+      <h3 class="capitalize text-sm text-black-tint mb-3 text-center">
+        COPYRIGHT © LENNY CO., LTD. ALL RIGHTS RESERVED.
+      </h3>
+      <div class="flex justify-center items-center gap-x-4">
+        <p>Terms of Use</p>
+        <p>Privacy Policy</p>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
