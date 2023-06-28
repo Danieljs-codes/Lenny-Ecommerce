@@ -1,5 +1,5 @@
 'use strict';
-import './style.css';
+import './assets/css/style.css';
 
 // const password = document.getElementById('input-password');
 // const showPassword = document.getElementById('show-password');
@@ -270,67 +270,39 @@ const url = window.location.href;
 //   console.log(target);
 // };
 
-document.querySelector('.minus').addEventListener('click', e => {
-  const target = e.currentTarget;
-  const parent = target.parentElement;
-  const input = parent.querySelector('input');
-  const inputValue = input.value;
-  const inputValueNumber = Number(inputValue);
-  if (inputValueNumber === 1) {
-    alert('The minimum order is 1');
-    return;
-  }
-  const newInputValue = inputValueNumber - 1;
-  input.value = newInputValue;
-});
-
-document.querySelector('.plus').addEventListener('click', e => {
-  const target = e.currentTarget;
-  const parent = target.parentElement;
-  const input = parent.querySelector('input');
-  const inputValue = input.value;
-  const inputValueNumber = Number(inputValue);
-  if (inputValueNumber >= 25) {
-    alert('You can only order 25 items');
-    return;
-  }
-  const newInputValue = inputValueNumber + 1;
-  input.value = newInputValue;
-});
-
 
 // Supabase edge function that listens to stripe webhook events and stores them in the database if the payment is successful
-export const handler = async (event, context) => {
-  const { data } = JSON.parse(event.body);
-  const { type } = data.object;
+// export const handler = async (event, context) => {
+//   const { data } = JSON.parse(event.body);
+//   const { type } = data.object;
 
-  if (type === 'checkout.session.completed') {
-    const { id, customer, amount_total } = data.object;
-    const { email } = customer;
+//   if (type === 'checkout.session.completed') {
+//     const { id, customer, amount_total } = data.object;
+//     const { email } = customer;
 
-    const { data: user } = await supabase
-      .from('users')
-      .select('id')
-      .eq('email', email)
-      .single();
+//     const { data: user } = await supabase
+//       .from('users')
+//       .select('id')
+//       .eq('email', email)
+//       .single();
 
 
-    await supabase
-      .from('orders')
-      .insert([
-        {
-          user_id: user.id,
-          stripe_id: id,
-          amount: amount_total,
-        },
-      ]);
+//     await supabase
+//       .from('orders')
+//       .insert([
+//         {
+//           user_id: user.id,
+//           stripe_id: id,
+//           amount: amount_total,
+//         },
+//       ]);
 
-    return {
-      statusCode: 200,
-      body: JSON.stringify({ received: true }),
-    };
-  }
-}
+//     return {
+//       statusCode: 200,
+//       body: JSON.stringify({ received: true }),
+//     };
+//   }
+// }
 
 
 // How do i implement a signup or signin modal that is available on every page of the website
@@ -341,20 +313,20 @@ export const handler = async (event, context) => {
 // How do i implement a product modal that is available on every page of the website
 
 // Edge functions that listens to upload on Supabase storage if a user uploads a profile picture it gets the url and updates that particular user's profile picture column with the url
-export const handler = async (event, context) => {
-  const { data } = JSON.parse(event.body);
-  const { id, user_id, file: { url } } = data;
+// export const handler = async (event, context) => {
+//   const { data } = JSON.parse(event.body);
+//   const { id, user_id, file: { url } } = data;
 
-  await supabase
-    .from('users')
-    .update({ profile_picture: url })
-    .eq('id', user_id);
+//   await supabase
+//     .from('users')
+//     .update({ profile_picture: url })
+//     .eq('id', user_id);
 
-  return {
-    statusCode: 200,
-    body: JSON.stringify({ received: true }),
-  };
-}
+//   return {
+//     statusCode: 200,
+//     body: JSON.stringify({ received: true }),
+//   };
+// }
 
 // When a user is uploading a profile picture how can i know the userID of the user that is uploading the profile picture I am using Supabase Auth and Supabase Storage
 

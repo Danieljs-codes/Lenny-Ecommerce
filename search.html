@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg" />
     <link
       href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@1&display=swap"
       rel="stylesheet"
     />
+    <script defer type="module" src="./assets/js/search.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lenny - Ecommerce</title>
   </head>
@@ -15,7 +16,7 @@
       <nav class="flex items-center px-6 py-4 bg-white border border-grey-02">
         <!--Logo-->
         <div class="hidden md:block mr-9">
-          <a href="#"><img src="./images/Logo.svg" alt="" /></a>
+          <a href="#"><img src="./assets/images/Logo.svg" alt="" /></a>
         </div>
         <!--Search-->
         <div class="flex flex-1">
@@ -80,17 +81,20 @@
         <!--Icons-->
         <div class="icons ml-4 lg:ml-12 flex gap-x-4">
           <button>
-            <img src="./images/shopping-cart.svg" alt="Shopping Cart Icon" />
+            <img
+              src="./assets/images/shopping-cart.svg"
+              alt="Shopping Cart Icon"
+            />
           </button>
           <button class="relative isolate">
-            <img src="./images/notification.svg" alt="" />
+            <img src="./assets/images/notification.svg" alt="" />
             <span
               class="rounded-full bg-danger absolute text-white text-[9px] font-medium h-[1.125rem] w-[1.125rem] flex justify-center items-center -right-2 -top-2 md:top-1 border-[1.5px] border-white"
               >6</span
             >
           </button>
           <button class="relative isolate">
-            <img src="./images/sms.svg" alt="" />
+            <img src="./assets/images/sms.svg" alt="" />
             <span
               class="rounded-full bg-danger absolute text-white text-[9px] font-medium h-[1.125rem] w-[1.125rem] flex justify-center items-center -right-2 -top-2 md:top-1 border-[1.5px] border-white"
               >6</span
@@ -98,13 +102,13 @@
           </button>
           <span class="bg-grey-02 w-[1px] inline-block"></span>
           <button class="md:hidden">
-            <img src="./images/menu.svg" alt="" />
+            <img src="./assets/images/menu.svg" alt="" />
           </button>
           <button class="hidden md:block">
             <div class="w-12 h-12">
               <img
                 class="bg-cover bg-no-repeat bg-center"
-                src="./images/defaultPfp.svg"
+                src="./assets/images/defaultPfp.svg"
                 alt="Profile Picture"
               />
             </div>
@@ -382,10 +386,13 @@
                   -->
               <div
                 id="overlay"
-                class="fixed inset-0 bg-black bg-opacity-25"
+                class="fixed hidden inset-0 bg-black bg-opacity-25"
               ></div>
 
-              <div id="sidebar" class="fixed inset-0 z-40 flex">
+              <div
+                id="sidebar"
+                class="fixed inset-0 z-40 flex translate-x-full"
+              >
                 <!--
                       Off-canvas menu, show/hide based on off-canvas menu state.
             
@@ -1054,7 +1061,10 @@
             <!-- Product Search Card -->
             <div class="rounded-lg overflow-hidden">
               <div class="bg-grey-04 rounded-lg px-5 py-3">
-                <img src="./images/mouse.png" alt="Mouse product image" />
+                <img
+                  src="./assets/images/mouse.png"
+                  alt="Mouse product image"
+                />
               </div>
               <div class="flex items-start pt-5">
                 <h2
@@ -1105,7 +1115,10 @@
             </div>
             <div class="rounded-lg overflow-hidden">
               <div class="bg-grey-04 rounded-lg px-5 py-3">
-                <img src="./images/mouse.png" alt="Mouse product image" />
+                <img
+                  src="./assets/images/mouse.png"
+                  alt="Mouse product image"
+                />
               </div>
               <div class="flex items-start pt-5">
                 <h2
@@ -1156,7 +1169,10 @@
             </div>
             <div class="rounded-lg overflow-hidden">
               <div class="bg-grey-04 rounded-lg px-5 py-3">
-                <img src="./images/mouse.png" alt="Mouse product image" />
+                <img
+                  src="./assets/images/mouse.png"
+                  alt="Mouse product image"
+                />
               </div>
               <div class="flex items-start pt-5">
                 <h2
@@ -1207,7 +1223,10 @@
             </div>
             <div class="rounded-lg overflow-hidden">
               <div class="bg-grey-04 rounded-lg px-5 py-3">
-                <img src="./images/mouse.png" alt="Mouse product image" />
+                <img
+                  src="./assets/images/mouse.png"
+                  alt="Mouse product image"
+                />
               </div>
               <div class="flex items-start pt-5">
                 <h2
@@ -1258,7 +1277,10 @@
             </div>
             <div class="rounded-lg overflow-hidden">
               <div class="bg-grey-04 rounded-lg px-5 py-3">
-                <img src="./images/mouse.png" alt="Mouse product image" />
+                <img
+                  src="./assets/images/mouse.png"
+                  alt="Mouse product image"
+                />
               </div>
               <div class="flex items-start pt-5">
                 <h2
@@ -1309,7 +1331,10 @@
             </div>
             <div class="rounded-lg overflow-hidden">
               <div class="bg-grey-04 rounded-lg px-5 py-3">
-                <img src="./images/mouse.png" alt="Mouse product image" />
+                <img
+                  src="./assets/images/mouse.png"
+                  alt="Mouse product image"
+                />
               </div>
               <div class="flex items-start pt-5">
                 <h2
@@ -1360,7 +1385,10 @@
             </div>
             <div class="rounded-lg overflow-hidden">
               <div class="bg-grey-04 rounded-lg px-5 py-3">
-                <img src="./images/mouse.png" alt="Mouse product image" />
+                <img
+                  src="./assets/images/mouse.png"
+                  alt="Mouse product image"
+                />
               </div>
               <div class="flex items-start pt-5">
                 <h2
@@ -1411,7 +1439,10 @@
             </div>
             <div class="rounded-lg overflow-hidden">
               <div class="bg-grey-04 rounded-lg px-5 py-3">
-                <img src="./images/mouse.png" alt="Mouse product image" />
+                <img
+                  src="./assets/images/mouse.png"
+                  alt="Mouse product image"
+                />
               </div>
               <div class="flex items-start pt-5">
                 <h2
@@ -1462,7 +1493,10 @@
             </div>
             <div class="rounded-lg overflow-hidden">
               <div class="bg-grey-04 rounded-lg px-5 py-3">
-                <img src="./images/mouse.png" alt="Mouse product image" />
+                <img
+                  src="./assets/images/mouse.png"
+                  alt="Mouse product image"
+                />
               </div>
               <div class="flex items-start pt-5">
                 <h2
@@ -1513,7 +1547,10 @@
             </div>
             <div class="rounded-lg overflow-hidden">
               <div class="bg-grey-04 rounded-lg px-5 py-3">
-                <img src="./images/mouse.png" alt="Mouse product image" />
+                <img
+                  src="./assets/images/mouse.png"
+                  alt="Mouse product image"
+                />
               </div>
               <div class="flex items-start pt-5">
                 <h2
@@ -1564,7 +1601,10 @@
             </div>
             <div class="rounded-lg overflow-hidden">
               <div class="bg-grey-04 rounded-lg px-5 py-3">
-                <img src="./images/mouse.png" alt="Mouse product image" />
+                <img
+                  src="./assets/images/mouse.png"
+                  alt="Mouse product image"
+                />
               </div>
               <div class="flex items-start pt-5">
                 <h2
@@ -1615,7 +1655,10 @@
             </div>
             <div class="rounded-lg overflow-hidden">
               <div class="bg-grey-04 rounded-lg px-5 py-3">
-                <img src="./images/mouse.png" alt="Mouse product image" />
+                <img
+                  src="./assets/images/mouse.png"
+                  alt="Mouse product image"
+                />
               </div>
               <div class="flex items-start pt-5">
                 <h2
@@ -1741,7 +1784,7 @@
       </section>
       <footer class="px-6 bg-grey-03 py-10">
         <a class="block mb-4" href="#"
-          ><img src="./images/Logo.svg" alt="Lenny Brand Logo"
+          ><img src="./assets/images/Logo.svg" alt="Lenny Brand Logo"
         /></a>
         <p class="text-sm text-black-tint font-normal leading-[1.6] mb-8">
           The biggest marketplace managed by Ideologist corp, which provides
@@ -1844,4 +1887,3 @@
   </body>
   <script type="module" src="/main.js"></script>
 </html>
-  
